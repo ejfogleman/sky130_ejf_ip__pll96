@@ -590,21 +590,6 @@ model=pfet_01v8_lvt
 spiceprefix=X
 }
 C {lab_wire.sym} 5700 -920 0 0 {name=p10 sig_type=std_logic lab=mp3d}
-C {sky130_fd_pr/pfet3_01v8_lvt.sym} 5430 -970 3 0 {name=MPC1
-W=4
-L=4
-body=vdd
-nf=1
-mult=28
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
-model=pfet_01v8_lvt
-spiceprefix=X
-}
 C {sky130_fd_pr/nfet3_01v8.sym} 5810 -400 0 0 {name=MN23
 W=1
 L=0.5
@@ -633,5 +618,20 @@ ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
 nrd="'0.29 / W'" nrs="'0.29 / W'"
 sa=0 sb=0 sd=0
 model=nfet_01v8
+spiceprefix=X
+}
+C {sky130_fd_pr/pfet3_01v8_lvt.sym} 5430 -970 3 0 {name=MPC1
+W=60
+L=7.5	
+body=vdd
+nf=10
+mult=1
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=pfet_01v8_lvt
 spiceprefix=X
 }
