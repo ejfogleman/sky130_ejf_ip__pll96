@@ -1,0 +1,24 @@
+# xschem/ngspice/magic
+untitled*
+*.log
+*.ps
+*.svg
+*.raw
+*.out
+*.err
+*.ext
+*.drc
+*.cif
+*.spice
+
+# General
+*.bak*
+*.tmp
+*.swp
+*.swo
+*.save
+*~
+
+# OS files
+.DS_Store
+Thumbs.db

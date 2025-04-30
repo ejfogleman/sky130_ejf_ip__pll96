@@ -1,0 +1,1 @@
+puts stdout "Sourcing cwd .magicrc"
