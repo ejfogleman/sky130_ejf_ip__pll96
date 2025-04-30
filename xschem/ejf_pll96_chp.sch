@@ -13,6 +13,9 @@ T {5 uA} 4820 -320 0 0 0.4 0.4 {}
 T {2 uA} 5690 -1240 0 0 0.4 0.4 {}
 T {1 uA} 5570 -320 0 0 0.4 0.4 {}
 T {1 uA} 5800 -320 0 0 0.4 0.4 {}
+T {8 fF/um^2
+C1 = 3.5 pF
+} 5500 -1050 0 0 0.2 0.2 {}
 N 4100 -370 4100 -330 {lab=gnd}
 N 3820 -330 4100 -330 {lab=gnd}
 N 4100 -500 4100 -430 {lab=#net1}
@@ -128,8 +131,6 @@ N 5710 -920 5830 -920 {
 lab=mp3d}
 N 5870 -740 5930 -740 {
 lab=cp}
-N 5430 -570 5430 -330 {
-lab=gnd}
 N 5740 -610 5830 -610 {
 lab=ng}
 N 5740 -610 5740 -400 {
@@ -158,8 +159,6 @@ lab=cp}
 N 5520 -740 5550 -740 {
 lab=cp_replica}
 N 4720 -830 4720 -740 {lab=cp_replica}
-N 5430 -740 5430 -660 {
-lab=cp_replica}
 N 5320 -740 5430 -740 {
 lab=cp_replica}
 N 5330 -330 5430 -330 {
@@ -172,40 +171,33 @@ N 5520 -680 5590 -680 {
 lab=cp_replica}
 N 5590 -710 5590 -680 {
 lab=cp_replica}
-N 5260 -1150 5260 -1130 {
-lab=mp1g}
 N 5010 -1130 5260 -1130 {
 lab=mp1g}
-N 5360 -1200 5360 -1100 {
-lab=vdd}
 N 5180 -1200 5360 -1200 {lab=vdd}
-N 5130 -1000 5360 -1000 {
-lab=mp1cg}
 N 4500 -1000 5130 -1000 {
 lab=mp1cg}
-N 5360 -1040 5360 -1000 {
-lab=mp1cg}
-N 5250 -350 5250 -330 {
-lab=gnd}
 N 5180 -330 5250 -330 {
 lab=gnd}
-N 5130 -400 5250 -400 {
-lab=ibpn_1u}
-N 5020 -400 5130 -400 {
-lab=ibpn_1u}
-N 5330 -400 5330 -330 {}
 N 5250 -330 5330 -330 {
 lab=gnd}
-N 5330 -530 5330 -460 {}
 N 5130 -530 5330 -530 {
 lab=ibpn_1u}
-N 5320 -740 5320 -670 {}
 N 4720 -740 5320 -740 {
 lab=cp_replica}
-N 5320 -610 5320 -570 {}
-N 5320 -570 5430 -570 {}
-N 5430 -600 5430 -570 {
-lab=gnd}
+N 5370 -990 5400 -990 {
+lab=vdd}
+N 5370 -1090 5370 -990 {
+lab=vdd}
+N 5460 -990 5490 -990 {
+lab=vdd}
+N 5490 -1090 5490 -990 {
+lab=vdd}
+N 5370 -1090 5490 -1090 {
+lab=vdd}
+N 5430 -1200 5430 -1090 {
+lab=vdd}
+N 5430 -950 5430 -740 {
+lab=cp_replica}
 C {title_nologo.sym} 4030 -220 0 0 {name=l1 author="ejfogleman"}
 C {sky130_fd_pr/nfet3_01v8.sym} 4080 -400 0 0 {name=MN3
 W=1
@@ -567,7 +559,6 @@ spiceprefix=X
 }
 C {lab_wire.sym} 5230 -740 0 0 {name=p5 sig_type=std_logic lab=cp_replica}
 C {lab_wire.sym} 5730 -400 0 0 {name=p9 sig_type=std_logic lab=ng}
-C {sky130_fd_pr/cap_mim_m3_1.sym} 5430 -630 0 0 {name=C2 model=cap_mim_m3_1 W=14 L=14 MF=1 spiceprefix=X}
 C {sky130_fd_pr/pfet3_01v8_lvt.sym} 5570 -740 0 0 {name=M1
 W=4
 L=0.35
@@ -629,28 +620,18 @@ model=nfet_01v8_lvt
 spiceprefix=X
 }
 C {lab_wire.sym} 5700 -920 0 0 {name=p10 sig_type=std_logic lab=mp3d}
-C {capa.sym} 5260 -1170 0 0 {name=C1
-m=1
-value=1u
-footprint=1206
-device="ceramic capacitor"}
-C {capa.sym} 5360 -1070 0 0 {name=C3
-m=1
-value=1u
-footprint=1206
-device="ceramic capacitor"}
-C {capa.sym} 5250 -370 0 0 {name=C4
-m=1
-value=1u
-footprint=1206
-device="ceramic capacitor"}
-C {capa.sym} 5330 -430 0 0 {name=C5
-m=1
-value=1u
-footprint=1206
-device="ceramic capacitor"}
-C {capa.sym} 5320 -640 0 0 {name=C6
-m=1
-value=1u
-footprint=1206
-device="ceramic capacitor"}
+C {sky130_fd_pr/pfet3_01v8_lvt.sym} 5430 -970 3 0 {name=MPC1
+W=4
+L=4
+body=vdd
+nf=1
+mult=28
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=pfet_01v8_lvt
+spiceprefix=X
+}

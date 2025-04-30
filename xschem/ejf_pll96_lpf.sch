@@ -66,7 +66,7 @@ lab=#net1}
 N 320 -190 390 -190 {
 lab=#net1}
 N 390 -540 390 -500 {
-lab=#net2}
+lab=mpc2g}
 N 530 -580 560 -580 {
 lab=vdd}
 N 530 -680 530 -580 {
@@ -182,3 +182,4 @@ sa=0 sb=0 sd=0
 model=pfet_01v8_lvt
 spiceprefix=X
 }
+C {lab_wire.sym} 390 -510 0 0 {name=p3 sig_type=std_logic lab=mpc2g}

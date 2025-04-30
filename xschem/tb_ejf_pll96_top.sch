@@ -118,8 +118,10 @@ C {devices/code_shown.sym} 840 100 0 0 {name=s2 only_toplevel=false value="* Run
    save i(v_vdd_ref) i(v_vdd_vco) i(v_vdd_div) 
    save clk_ref clk_out clk_out_div2
    save xpll.qref xpll.qref_b xpll.qclk xpll.qclk_b xpll.vc xpll.vco_outp xpll.vco_outn
-   save xpll.xvco.vhi xpll.xvco.x0p xpll.xvco.x0n xpll.xvco.x1p xpll.xvco.x1n xpll.xvco.x2p xpll.xvco.x2n xpll.xvco.x3p xpll.xvco.x3n 
-   tran 1n 20u
+   save xpll.xvco.vhi xpll.xvco.x0p xpll.xvco.x0n xpll.xvco.x1p xpll.xvco.x1n xpll.xvco.x2p xpll.xvco.x2n xpll.xvco.x3p xpll.xvco.x3n xpll.clk_divf
+   save xpll.xchp.cp_replica xpll.xchp.mp1g xpll.xchp.mp1cg xpll.xchp.mn1g ibpn_1u xpll.xchp.ng xpll.xchp.mp3d
+   save xpll.xlpf.mpc2g
+   tran 1n 30u
    write tb_ejf_pll96_top.raw
    meas tran idd_ref avg i(v_vdd_ref) from=18u to=20u
    meas tran idd_vco avg i(v_vdd_vco) from=18u to=20u

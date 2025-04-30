@@ -157,9 +157,12 @@ N 670 -780 920 -780 {
 lab=vdd_vco}
 N -140 -220 1740 -220 {
 lab=clk_divf}
-N -160 -200 200 -200 {}
-N -160 -690 200 -690 {}
-N -160 -670 280 -670 {}
+N -160 -200 200 -200 {
+lab=gnd}
+N -160 -690 200 -690 {
+lab=vdd_ref}
+N -160 -670 280 -670 {
+lab=ibpn_1u}
 C {title_nologo.sym} 0 0 0 0 {name=l1 author="ejfogleman"}
 C {ejf_pll96_lpf.sym} 800 -710 0 0 {name=xlpf}
 C {ejf_pll96_div_mm.sym} 1530 -380 0 0 {name=xdiv}
