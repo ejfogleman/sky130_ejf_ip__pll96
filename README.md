@@ -1,2 +1,2 @@
-# sky130_ejf_ip__template
-Repository naming convention: `<process>_<designer>_ip__<design-name>`
+# sky130_ejf_ip__pll96
+sky130 96 MHz clock multiplier PLL IP
