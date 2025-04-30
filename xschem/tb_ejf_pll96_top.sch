@@ -119,9 +119,12 @@ C {devices/code_shown.sym} 840 100 0 0 {name=s2 only_toplevel=false value="* Run
    save clk_ref clk_out clk_out_div2
    save xpll.qref xpll.qref_b xpll.qclk xpll.qclk_b xpll.vc xpll.vco_outp xpll.vco_outn
    save xpll.xvco.vhi xpll.xvco.x0p xpll.xvco.x0n xpll.xvco.x1p xpll.xvco.x1n xpll.xvco.x2p xpll.xvco.x2n xpll.xvco.x3p xpll.xvco.x3n 
-   tran 1n 10u
-   write tb_ejf_pfd.raw
-   meas tran i_v_vdd_avg avg i(v_vdd) from=0n to=10u
+   tran 1n 20u
+   write tb_ejf_pll96_top.raw
+   meas tran idd_ref avg i(v_vdd_ref) from=18u to=20u
+   meas tran idd_vco avg i(v_vdd_vco) from=18u to=20u
+   meas tran idd_div avg i(v_vdd_div) from=18u to=20u
+   plot xpll.vc
 .endc
 .end"}
 C {lab_wire.sym} 770 -640 0 1 {name=p5 sig_type=std_logic lab=clk_ref}
