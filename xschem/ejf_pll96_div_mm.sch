@@ -53,27 +53,27 @@ lab=clk}
 N -340 -460 -240 -460 {
 lab=mc}
 N 60 -280 80 -280 {
-lab=s3}
+lab=s[3]}
 N 60 -260 80 -260 {
-lab=s2}
+lab=s[2]}
 N 60 -240 80 -240 {
-lab=s1}
+lab=s[1]}
 N 60 -220 80 -220 {
-lab=s0}
+lab=s[0]}
 N 230 -440 250 -440 {
-lab=p3}
+lab=p[3]}
 N 230 -420 250 -420 {
-lab=p2}
+lab=p[2]}
 N 230 -400 250 -400 {
-lab=p1}
+lab=p[1]}
 N 230 -380 250 -380 {
-lab=p0}
+lab=p[0]}
 N 230 -360 250 -360 {
-lab=en3}
+lab=en[3]}
 N 230 -340 250 -340 {
-lab=en2}
+lab=en[2]}
 N 230 -320 250 -320 {
-lab=en1}
+lab=en[1]}
 N 140 -460 140 -300 {
 lab=clk_div23}
 N -410 -140 80 -140 {
@@ -87,7 +87,7 @@ lab=q}
 N 140 -280 650 -280 {
 lab=q}
 N 230 -300 250 -300 {
-lab=en0}
+lab=en[0]}
 N 60 -200 140 -200 {lab=q}
 N 140 -280 140 -200 {
 lab=q}
@@ -109,19 +109,19 @@ C {lab_pin.sym} 580 -300 0 1 {name=p7 sig_type=std_logic lab=gnd}
 C {lab_pin.sym} -270 -180 0 0 {name=p8 sig_type=std_logic lab=gnd}
 C {lab_pin.sym} -270 -300 0 0 {name=p9 sig_type=std_logic lab=vdd}
 C {lab_pin.sym} -270 -480 0 0 {name=p10 sig_type=std_logic lab=vdd}
-C {ipin.sym} 230 -440 0 0 {name=p12 lab=p3}
-C {ipin.sym} 230 -420 0 0 {name=p13 lab=p2}
-C {ipin.sym} 230 -400 0 0 {name=p14 lab=p1}
-C {ipin.sym} 230 -380 0 0 {name=p15 lab=p0}
-C {ipin.sym} 230 -360 0 0 {name=p16 lab=en3}
-C {ipin.sym} 230 -340 0 0 {name=p17 lab=en2}
-C {ipin.sym} 230 -320 0 0 {name=p18 lab=en1}
-C {ipin.sym} 80 -220 0 1 {name=p19 lab=s0}
-C {ipin.sym} 80 -240 0 1 {name=p20 lab=s1}
-C {ipin.sym} 80 -260 0 1 {name=p21 lab=s2}
-C {ipin.sym} 80 -280 0 1 {name=p23 lab=s3}
+C {ipin.sym} 230 -440 0 0 {name=p12 lab=p[3]}
+C {ipin.sym} 230 -420 0 0 {name=p13 lab=p[2]}
+C {ipin.sym} 230 -400 0 0 {name=p14 lab=p[1]}
+C {ipin.sym} 230 -380 0 0 {name=p15 lab=p[0]}
+C {ipin.sym} 230 -360 0 0 {name=p16 lab=en[3]}
+C {ipin.sym} 230 -340 0 0 {name=p17 lab=en[2]}
+C {ipin.sym} 230 -320 0 0 {name=p18 lab=en[1]}
+C {ipin.sym} 80 -220 0 1 {name=p19 lab=s[0]}
+C {ipin.sym} 80 -240 0 1 {name=p20 lab=s[1]}
+C {ipin.sym} 80 -260 0 1 {name=p21 lab=s[2]}
+C {ipin.sym} 80 -280 0 1 {name=p23 lab=s[3]}
 C {lab_wire.sym} 230 -460 0 0 {name=p24 sig_type=std_logic lab=clk_div23}
 C {ipin.sym} -410 -140 0 0 {name=p25 lab=ens}
-C {ipin.sym} 230 -300 0 0 {name=p26 lab=en0}
+C {ipin.sym} 230 -300 0 0 {name=p26 lab=en[0]}
 C {ejf_pll96_div_s.sym} -90 -240 0 1 {name=xs}
 C {lab_wire.sym} -270 -240 0 0 {name=p11 sig_type=std_logic lab=mc}

@@ -27,9 +27,9 @@ lab=q_b}
 N 110 -740 110 -650 {
 lab=q_b}
 N 310 -540 310 -520 {
-lab=s0}
+lab=s[0]}
 N 250 -540 310 -540 {
-lab=s0}
+lab=s[0]}
 N 350 -610 350 -520 {
 lab=q0}
 N 350 -630 380 -630 {
@@ -53,9 +53,9 @@ lab=q_b}
 N 440 -740 440 -650 {
 lab=q_b}
 N 640 -540 640 -520 {
-lab=s1}
+lab=s[1]}
 N 580 -540 640 -540 {
-lab=s1}
+lab=s[1]}
 N 680 -610 680 -520 {
 lab=q1}
 N 680 -630 710 -630 {
@@ -81,9 +81,9 @@ lab=q_b}
 N 770 -740 770 -650 {
 lab=q_b}
 N 970 -540 970 -520 {
-lab=s2}
+lab=s[2]}
 N 910 -540 970 -540 {
-lab=s2}
+lab=s[2]}
 N 1010 -610 1010 -520 {
 lab=q2}
 N 1010 -630 1040 -630 {
@@ -109,9 +109,9 @@ lab=q_b}
 N 1100 -740 1100 -650 {
 lab=q_b}
 N 1300 -540 1300 -520 {
-lab=s3}
+lab=s[3]}
 N 1240 -540 1300 -540 {
-lab=s3}
+lab=s[3]}
 N 1340 -610 1340 -520 {
 lab=q3}
 N 1040 -610 1120 -610 {
@@ -209,10 +209,10 @@ C {sky130_stdcells/xnor2_1.sym} 1320 -460 1 0 {name=x9 VGND=gnd VNB=gnd VPB=vdd 
 }
 C {sky130_stdcells/dfrbp_1.sym} 1210 -630 2 1 {name=xdff3 VGND=gnd VNB=gnd VPB=vdd VPWR=vdd prefix=sky130_fd_sc_ls__ 
 }
-C {ipin.sym} 250 -540 0 0 {name=p5 lab=s0}
-C {ipin.sym} 580 -540 0 0 {name=p6 lab=s1}
-C {ipin.sym} 910 -540 0 0 {name=p7 lab=s2}
-C {ipin.sym} 1240 -540 0 0 {name=p8 lab=s3}
+C {ipin.sym} 250 -540 0 0 {name=p5 lab=s[0]}
+C {ipin.sym} 580 -540 0 0 {name=p6 lab=s[1]}
+C {ipin.sym} 910 -540 0 0 {name=p7 lab=s[2]}
+C {ipin.sym} 1240 -540 0 0 {name=p8 lab=s[3]}
 C {ipin.sym} 50 -610 0 0 {name=p9 lab=clk}
 C {lab_wire.sym} 340 -610 0 0 {name=p2 sig_type=std_logic lab=q0}
 C {lab_wire.sym} 340 -630 0 0 {name=p3 sig_type=std_logic lab=q0_b}

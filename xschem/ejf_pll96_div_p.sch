@@ -41,21 +41,21 @@ N -120 -390 380 -390 {lab=q1}
 N -120 -390 -120 -310 {lab=q1}
 N 380 -330 380 -270 {lab=q2}
 N -120 -270 -120 -190 {lab=q2}
-N -150 -350 -20 -350 {lab=en2}
-N -150 -230 -20 -230 {lab=en3}
+N -150 -350 -20 -350 {lab=en[2]}
+N -150 -230 -20 -230 {lab=en[3]}
 N -120 -270 380 -270 {lab=q2}
 N 380 -230 380 -210 {lab=q3}
-N -50 -590 -20 -590 {lab=en0}
-N -150 -450 -20 -450 {lab=p1}
-N -150 -330 -20 -330 {lab=p2}
-N -150 -210 -20 -210 {lab=p3}
+N -50 -590 -20 -590 {lab=en[0]}
+N -150 -450 -20 -450 {lab=p[1]}
+N -150 -330 -20 -330 {lab=p[2]}
+N -150 -210 -20 -210 {lab=p[3]}
 N 280 -570 380 -570 {lab=q0}
-N -150 -470 -20 -470 {lab=en1}
+N -150 -470 -20 -470 {lab=en[1]}
 N 500 -570 500 -430 {
 lab=q0}
 N 500 -430 570 -430 {
 lab=q0}
-N -150 -570 -20 -570 {lab=p0}
+N -150 -570 -20 -570 {lab=p[0]}
 N 380 -570 500 -570 {lab=q0}
 N 380 -390 570 -390 {
 lab=q1}
@@ -85,7 +85,7 @@ lab=clk}
 N 680 -370 750 -370 {
 lab=eq0123}
 N 710 -390 750 -390 {
-lab=en0}
+lab=en[0]}
 C {title_nologo.sym} -200 -10 0 0 {name=l1 author="ejfogleman"}
 C {ejf_pll96_div23.sym} 130 -570 0 0 {name=x0}
 C {ejf_pll96_div23.sym} 130 -450 0 0 {name=x1}
@@ -102,20 +102,20 @@ C {lab_pin.sym} 310 -350 0 1 {name=p9 sig_type=std_logic lab=vdd}
 C {lab_pin.sym} 310 -310 0 1 {name=p10 sig_type=std_logic lab=gnd}
 C {lab_pin.sym} 310 -230 0 1 {name=p11 sig_type=std_logic lab=vdd}
 C {lab_pin.sym} 310 -190 0 1 {name=p12 sig_type=std_logic lab=gnd}
-C {ipin.sym} -150 -450 0 0 {name=p15 lab=p1}
-C {ipin.sym} -150 -330 0 0 {name=p16 lab=p2}
-C {ipin.sym} -150 -210 0 0 {name=p17 lab=p3}
-C {ipin.sym} -150 -230 0 0 {name=p18 lab=en3}
-C {ipin.sym} -150 -350 0 0 {name=p19 lab=en2}
+C {ipin.sym} -150 -450 0 0 {name=p15 lab=p[1]}
+C {ipin.sym} -150 -330 0 0 {name=p16 lab=p[2]}
+C {ipin.sym} -150 -210 0 0 {name=p17 lab=p[3]}
+C {ipin.sym} -150 -230 0 0 {name=p18 lab=en[3]}
+C {ipin.sym} -150 -350 0 0 {name=p19 lab=en[2]}
 C {opin.sym} 970 -350 0 0 {name=p22 lab=q}
 C {lab_wire.sym} 370 -570 0 1 {name=p23 sig_type=std_logic lab=q0}
 C {lab_wire.sym} 370 -450 0 1 {name=p24 sig_type=std_logic lab=q1}
 C {lab_wire.sym} 370 -330 0 1 {name=p25 sig_type=std_logic lab=q2}
 C {lab_wire.sym} 380 -230 0 1 {name=p26 sig_type=std_logic lab=q3}
-C {ipin.sym} -150 -470 0 0 {name=p13 lab=en1}
-C {ipin.sym} -50 -590 0 0 {name=p14 lab=en0}
-C {ipin.sym} -150 -570 0 0 {name=p27 lab=p0}
+C {ipin.sym} -150 -470 0 0 {name=p13 lab=en[1]}
+C {ipin.sym} -50 -590 0 0 {name=p14 lab=en[0]}
+C {ipin.sym} -150 -570 0 0 {name=p27 lab=p[0]}
 C {sky130_stdcells/and4_2.sym} 630 -370 0 0 {name=x6 VGND=gnd VNB=gnd VPB=vdd VPWR=vdd prefix=sky130_fd_sc_ls__}
 C {sky130_stdcells/dfrtp_2.sym} 840 -370 2 1 {name=x4 VGND=gnd VNB=gnd VPB=vdd VPWR=vdd prefix=sky130_fd_sc_ls__}
-C {lab_wire.sym} 730 -390 0 0 {name=p20 sig_type=std_logic lab=en0}
+C {lab_wire.sym} 730 -390 0 0 {name=p20 sig_type=std_logic lab=en[0]}
 C {lab_wire.sym} 700 -370 0 1 {name=p4 sig_type=std_logic lab=eq0123}
