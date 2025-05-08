@@ -7,14 +7,18 @@ S {}
 E {}
 T {100 uA} 240 -790 0 0 0.4 0.4 {}
 T {Level shift to divider supply} 1280 -280 0 0 0.4 0.4 {}
-T {42 uA (test only)} 630 -790 0 0 0.4 0.4 {hcenter=true}
-T {42 uA (test only)} 640 -340 0 0 0.4 0.4 {hcenter=true}
+T {34 uA (test only)} 630 -790 0 0 0.4 0.4 {hcenter=true}
+T {34 uA (test only)} 640 -340 0 0 0.4 0.4 {hcenter=true}
 T {Test mode to drive vco vc to fixed
-levels with charge pump disabled:
-lo=1, mid=1, hi=0 ==> 0.33*VDD
-lo=0, mid=1, hi=0 ==> 0.5*VDD
-lo=0, mid=1, hi=1 ==> 0.66*VDD
-lo=0, mid=0, hi=1 ==> VDD (disabled)} 850 -620 0 0 0.4 0.4 {}
+levels with charge pump disabled
+tst[2],tst[1],tst[0]
+1,0,0 ==> 1.8 V
+1,0,1 ==> 0.9 V (3/6)
+0,0,1 ==> 0.771 V (3/7)
+1,1,X ==> 0.72 V (2/5)
+0,1,1 ==> 0.6 V (2/6) 
+0,1,0 ==> 0 V
+0,0,0 ==> NORMAL MODE} 1210 -770 0 0 0.4 0.4 {}
 N 60 -260 60 -210 {lab=vhi}
 N 60 -190 120 -190 {lab=x0n}
 N 60 -170 120 -170 {lab=x0p}
@@ -85,73 +89,23 @@ lab=vdd_vco}
 N 240 -630 240 -620 {
 lab=vdd_vco}
 N 780 -260 1140 -260 {lab=vhi}
-N 560 -590 560 -570 {
-lab=#net3}
-N 560 -570 680 -570 {
-lab=#net3}
-N 680 -650 680 -570 {
-lab=#net3}
-N 560 -530 560 -510 {
-lab=#net4}
-N 560 -530 680 -530 {
-lab=#net4}
-N 680 -530 680 -450 {
-lab=#net4}
-N 680 -450 720 -450 {
-lab=#net4}
-N 560 -450 560 -430 {
-lab=#net5}
-N 720 -550 720 -510 {
-lab=vc}
 N 720 -450 720 -430 {
-lab=#net4}
-N 560 -680 560 -640 {
-lab=#net6}
-N 540 -670 540 -480 {
-lab=vdd_vco}
-N 540 -670 700 -670 {
-lab=vdd_vco}
-N 680 -650 720 -650 {
 lab=#net3}
-N 700 -670 700 -480 {
-lab=vdd_vco}
 N 720 -680 720 -650 {
-lab=#net3}
+lab=#net4}
 N 10 -880 50 -880 {
-lab=tst_mid}
-N 500 -880 540 -880 {
-lab=tst_hi}
-N 990 -880 1030 -880 {
-lab=tst_lo}
+lab=tst[2:0]}
 N 280 -530 280 -260 {
 lab=vhi}
 N 290 -910 330 -910 {
 lab=vdd_vco}
 N 290 -890 330 -890 {
-lab=mid}
+lab=tst_bb[2:0]}
 N 290 -870 330 -870 {
-lab=mid_b}
+lab=tst_b[2:0]}
 N 290 -850 330 -850 {
 lab=gnd_vco}
-N 780 -910 820 -910 {
-lab=vdd_vco}
-N 780 -890 820 -890 {
-lab=hi}
-N 780 -870 820 -870 {
-lab=hi_b}
-N 780 -850 820 -850 {
-lab=gnd_vco}
-N 1270 -910 1310 -910 {
-lab=vdd_vco}
-N 1270 -890 1310 -890 {
-lab=lo}
-N 1270 -870 1310 -870 {
-lab=lo_b}
-N 1270 -850 1310 -850 {
-lab=gnd_vco}
-N 10 -550 720 -550 {
-lab=vc}
-N 720 -590 720 -550 {
+N 10 -550 1040 -550 {
 lab=vc}
 N 280 -260 420 -260 {lab=vhi}
 N 60 -260 280 -260 {lab=vhi}
@@ -183,13 +137,13 @@ lab=gnd_vco}
 N 1570 -150 1590 -150 {
 lab=gnd_vco}
 N 500 -710 520 -710 {
-lab=mid_b}
+lab=tst_b[0]}
 N 500 -400 520 -400 {
-lab=mid}
+lab=tst_bb[1]}
 N 660 -400 680 -400 {
-lab=lo}
+lab=tst_bb[0]}
 N 660 -710 680 -710 {
-lab=hi_b}
+lab=tst_b[2]}
 N 1220 -300 1220 -210 {
 lab=x3n}
 N 1200 -170 1220 -210 {
@@ -200,6 +154,74 @@ lab=x3p}
 N 1140 -190 1200 -190 {lab=x3p}
 N 1220 -150 1220 -60 {
 lab=x3p}
+N 880 -590 880 -570 {
+lab=#net5}
+N 880 -570 1000 -570 {
+lab=#net5}
+N 1000 -650 1000 -570 {
+lab=#net5}
+N 880 -530 880 -510 {
+lab=#net6}
+N 880 -530 1000 -530 {
+lab=#net6}
+N 1000 -530 1000 -450 {
+lab=#net6}
+N 1000 -450 1040 -450 {
+lab=#net6}
+N 860 -670 860 -480 {
+lab=vdd_vco}
+N 860 -670 1020 -670 {
+lab=vdd_vco}
+N 1000 -650 1040 -650 {
+lab=#net5}
+N 1020 -670 1020 -480 {
+lab=vdd_vco}
+N 720 -570 840 -570 {
+lab=#net7}
+N 840 -650 840 -570 {
+lab=#net7}
+N 840 -650 880 -650 {
+lab=#net7}
+N 840 -530 840 -450 {
+lab=#net8}
+N 840 -450 880 -450 {
+lab=#net8}
+N 560 -590 560 -570 {
+lab=#net4}
+N 560 -570 680 -570 {
+lab=#net4}
+N 680 -650 680 -570 {
+lab=#net4}
+N 680 -650 720 -650 {
+lab=#net4}
+N 700 -670 700 -480 {
+lab=vdd_vco}
+N 700 -670 860 -670 {
+lab=vdd_vco}
+N 720 -530 720 -510 {
+lab=#net8}
+N 1040 -550 1040 -510 {
+lab=vc}
+N 720 -590 720 -570 {
+lab=#net7}
+N 720 -530 840 -530 {
+lab=#net8}
+N 560 -530 720 -530 {
+lab=#net8}
+N 560 -530 560 -430 {
+lab=#net8}
+N 560 -680 560 -650 {
+lab=#net9}
+N 720 -760 1020 -760 {
+lab=vdd_vco}
+N 1020 -760 1020 -670 {
+lab=vdd_vco}
+N 1040 -590 1040 -550 {
+lab=vc}
+N 540 -670 700 -670 {
+lab=vdd_vco}
+N 540 -670 540 -620 {
+lab=vdd_vco}
 C {title_nologo.sym} -20 10 0 0 {name=l1 author="ejfogleman"}
 C {ejf_pll96_vco_dlycell.sym} 270 -180 0 0 {name=x1}
 C {ejf_pll96_vco_dlycell.sym} 630 -180 0 0 {name=x2}
@@ -246,29 +268,9 @@ L=12.1
 model=res_high_po_2p85
 spiceprefix=X
 mult=1}
-C {sky130_fd_pr/res_high_po_2p85.sym} 200 -630 0 1 {name=R3[1:0]
+C {sky130_fd_pr/res_high_po_2p85.sym} 200 -630 0 1 {name=R10[1:0]
 L=12.1
 model=res_high_po_2p85
-spiceprefix=X
-mult=1}
-C {sky130_fd_pr/res_high_po_0p35.sym} 560 -620 0 0 {name=R3
-L=12.1
-model=res_high_po_0p35
-spiceprefix=X
-mult=1}
-C {sky130_fd_pr/res_high_po_0p35.sym} 720 -620 0 0 {name=R4
-L=12.1
-model=res_high_po_0p35
-spiceprefix=X
-mult=1}
-C {sky130_fd_pr/res_high_po_0p35.sym} 560 -480 0 0 {name=R5
-L=12.1
-model=res_high_po_0p35
-spiceprefix=X
-mult=1}
-C {sky130_fd_pr/res_high_po_0p35.sym} 720 -480 0 0 {name=R6
-L=12.1
-model=res_high_po_0p35
 spiceprefix=X
 mult=1}
 C {sky130_fd_pr/nfet3_01v8.sym} 540 -400 0 0 {name=M2
@@ -331,26 +333,48 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {ejf_pll96_dbuf.sym} 1150 -880 0 0 {name=x5}
-C {ejf_pll96_dbuf.sym} 660 -880 0 0 {name=x6}
-C {ejf_pll96_dbuf.sym} 170 -880 0 0 {name=x7}
-C {ipin.sym} 10 -880 0 0 {name=p1 lab=tst_mid}
-C {ipin.sym} 500 -880 0 0 {name=p9 lab=tst_hi}
-C {ipin.sym} 990 -880 0 0 {name=p14 lab=tst_lo}
+C {ejf_pll96_dbuf.sym} 170 -880 0 0 {name=xbuf[2:0]}
+C {ipin.sym} 10 -880 0 0 {name=p1 lab=tst[2:0]}
 C {lab_pin.sym} 330 -910 0 1 {name=p15 sig_type=std_logic lab=vdd_vco}
-C {lab_pin.sym} 330 -890 0 1 {name=p20 sig_type=std_logic lab=mid}
-C {lab_pin.sym} 330 -870 0 1 {name=p21 sig_type=std_logic lab=mid_b}
+C {lab_pin.sym} 330 -890 0 1 {name=p20 sig_type=std_logic lab=tst_bb[2:0]}
+C {lab_pin.sym} 330 -870 0 1 {name=p21 sig_type=std_logic lab=tst_b[2:0]}
 C {lab_pin.sym} 330 -850 0 1 {name=p22 sig_type=std_logic lab=gnd_vco}
-C {lab_pin.sym} 820 -910 0 1 {name=p23 sig_type=std_logic lab=vdd_vco}
-C {lab_pin.sym} 820 -890 0 1 {name=p24 sig_type=std_logic lab=hi}
-C {lab_pin.sym} 820 -870 0 1 {name=p25 sig_type=std_logic lab=hi_b}
-C {lab_pin.sym} 820 -850 0 1 {name=p26 sig_type=std_logic lab=gnd_vco}
-C {lab_pin.sym} 1310 -910 0 1 {name=p27 sig_type=std_logic lab=vdd_vco}
-C {lab_pin.sym} 1310 -890 0 1 {name=p28 sig_type=std_logic lab=lo}
-C {lab_pin.sym} 1310 -870 0 1 {name=p29 sig_type=std_logic lab=lo_b}
-C {lab_pin.sym} 1310 -850 0 1 {name=p30 sig_type=std_logic lab=gnd_vco}
-C {lab_wire.sym} 540 -580 0 0 {name=p31 sig_type=std_logic lab=vdd_vco}
-C {lab_wire.sym} 500 -400 0 0 {name=p32 sig_type=std_logic lab=mid}
-C {lab_wire.sym} 500 -710 0 0 {name=p33 sig_type=std_logic lab=mid_b}
-C {lab_wire.sym} 660 -710 0 0 {name=p34 sig_type=std_logic lab=hi_b}
-C {lab_wire.sym} 660 -400 0 0 {name=p35 sig_type=std_logic lab=lo}
+C {lab_wire.sym} 500 -400 0 0 {name=p32 sig_type=std_logic lab=tst_bb[1]}
+C {lab_wire.sym} 500 -710 0 0 {name=p33 sig_type=std_logic lab=tst_b[0]}
+C {lab_wire.sym} 670 -710 0 0 {name=p34 sig_type=std_logic lab=tst_b[2]}
+C {lab_wire.sym} 660 -400 0 0 {name=p35 sig_type=std_logic lab=tst_bb[0]}
+C {sky130_fd_pr/res_high_po_0p35.sym} 880 -480 0 0 {name=R4
+L=9
+model=res_high_po_0p35
+spiceprefix=X
+mult=1}
+C {sky130_fd_pr/res_high_po_0p35.sym} 720 -480 0 0 {name=R3
+L=9
+model=res_high_po_0p35
+spiceprefix=X
+mult=1}
+C {sky130_fd_pr/res_high_po_0p35.sym} 1040 -480 0 0 {name=R5
+L=9
+model=res_high_po_0p35
+spiceprefix=X
+mult=1}
+C {sky130_fd_pr/res_high_po_0p35.sym} 1040 -620 0 0 {name=R6
+L=9
+model=res_high_po_0p35
+spiceprefix=X
+mult=1}
+C {sky130_fd_pr/res_high_po_0p35.sym} 880 -620 0 0 {name=R7
+L=9
+model=res_high_po_0p35
+spiceprefix=X
+mult=1}
+C {sky130_fd_pr/res_high_po_0p35.sym} 720 -620 0 0 {name=R8
+L=9
+model=res_high_po_0p35
+spiceprefix=X
+mult=1}
+C {sky130_fd_pr/res_high_po_0p35.sym} 560 -620 0 0 {name=R9
+L=9
+model=res_high_po_0p35
+spiceprefix=X
+mult=1}
