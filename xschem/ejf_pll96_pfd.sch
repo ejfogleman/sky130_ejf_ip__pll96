@@ -18,8 +18,8 @@ N 20 -180 180 -180 {lab=b}
 N 640 -440 680 -440 {lab=a_b}
 N 360 -580 610 -580 {lab=qa0}
 N 910 -160 980 -160 {lab=qb}
-N 500 -420 520 -420 {lab=#net1}
-N 500 -340 520 -340 {lab=#net1}
+N 500 -420 520 -420 {lab=y_par}
+N 500 -340 520 -340 {lab=y_par}
 N 150 -380 150 -220 {lab=rst_b}
 N 640 -360 660 -360 {lab=a_b}
 N 360 -180 610 -180 {lab=qb0}
@@ -40,18 +40,18 @@ N 1000 -320 1000 -200 {lab=b_b}
 N 150 -380 200 -380 {
 lab=rst_b}
 N 150 -540 150 -380 {lab=rst_b}
-N 500 -380 500 -340 {lab=#net1}
+N 500 -380 500 -340 {lab=y_par}
 N 680 -440 1000 -440 {
 lab=a_b}
 N 680 -320 1000 -320 {
 lab=b_b}
 N 280 -380 300 -380 {
-lab=#net2}
-N 380 -380 400 -380 {
-lab=#net3}
-N 480 -380 500 -380 {
 lab=#net1}
-N 500 -420 500 -380 {lab=#net1}
+N 380 -380 400 -380 {
+lab=#net2}
+N 480 -380 500 -380 {
+lab=y_par}
+N 500 -420 500 -380 {lab=y_par}
 C {sky130_stdcells/nor2_2.sym} 580 -420 0 1 {name=x3 VGND=gnd VNB=gnd VPB=vdd VPWR=vdd prefix=sky130_fd_sc_ls__ }
 C {iopin.sym} 20 -110 0 1 {name=p1 lab=vdd}
 C {iopin.sym} 20 -90 0 1 {name=p2 lab=gnd}
@@ -84,4 +84,6 @@ C {lab_wire.sym} 190 -380 0 0 {name=p19 sig_type=std_logic lab=rst_b
 C {sky130_stdcells/dlygate4sd3_1.sym} 440 -380 0 1 {name=x10 VGND=gnd VNB=gnd VPB=vdd VPWR=vdd prefix=sky130_fd_sc_ls__ 
 }
 C {sky130_stdcells/dlygate4sd3_1.sym} 340 -380 0 1 {name=x5 VGND=gnd VNB=gnd VPB=vdd VPWR=vdd prefix=sky130_fd_sc_ls__ 
+}
+C {lab_wire.sym} 500 -420 0 0 {name=p20 sig_type=std_logic lab=y_par
 }

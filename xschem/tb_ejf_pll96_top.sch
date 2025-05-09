@@ -163,7 +163,7 @@ C {devices/code_shown.sym} 10 100 0 0 {name=s1 only_toplevel=false value="* ejf_
 .include ~/.volare/sky130A/libs.ref/sky130_fd_sc_ls/spice/sky130_fd_sc_ls.spice
 .option temp=27
 .param VDD=1.8
-.param T_REF=62.5n
+.param T_REF=125n
 .param TD_REF=50n
 .param T_RF=300p
 .param T_RAMP=50n
@@ -178,26 +178,26 @@ C {devices/code_shown.sym} 10 100 0 0 {name=s1 only_toplevel=false value="* ejf_
 * feedback F divider
 .param VS3=0
 .param VS2=0
-.param VS1=1.8
+.param VS1=0
 .param VS0=0
 .param VP3=0
 .param VP2=0
 .param VP1=0
-.param VP0=0
+.param VP0=1.8
 .param VEN3=0
 .param VEN2=0
-.param VEN1=0
+.param VEN1=1.8
 .param VEN0=1.8
-.param VENS=1.8
+.param VENS=0
 * charge pump bias
 .param VCPB2=1.8
 .param VCPB1=0
-.param VCPB0=0
+.param VCPB0=1.8
 .param VREPL=1.8
 * loop filter scale
 .param VCSC=0
 .param VRSC1=0
-.param VRSC0=1.8
+.param VRSC0=0
 * vco test
 .param VTST0=0
 .param VTST1=0

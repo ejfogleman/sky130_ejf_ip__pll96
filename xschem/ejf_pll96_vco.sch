@@ -93,7 +93,7 @@ N 720 -450 720 -430 {
 lab=#net3}
 N 720 -680 720 -650 {
 lab=#net4}
-N 10 -880 50 -880 {
+N 30 -880 50 -880 {
 lab=tst[2:0]}
 N 280 -530 280 -260 {
 lab=vhi}
@@ -222,6 +222,14 @@ N 540 -670 700 -670 {
 lab=vdd_vco}
 N 540 -670 540 -620 {
 lab=vdd_vco}
+N 30 -960 30 -880 {
+lab=tst[2:0]}
+N 10 -970 20 -970 {
+lab=tst[2]}
+N 10 -950 20 -950 {
+lab=tst[1]}
+N 10 -930 20 -930 {
+lab=tst[0]}
 C {title_nologo.sym} -20 10 0 0 {name=l1 author="ejfogleman"}
 C {ejf_pll96_vco_dlycell.sym} 270 -180 0 0 {name=x1}
 C {ejf_pll96_vco_dlycell.sym} 630 -180 0 0 {name=x2}
@@ -334,7 +342,7 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {ejf_pll96_dbuf.sym} 170 -880 0 0 {name=xbuf[2:0]}
-C {ipin.sym} 10 -880 0 0 {name=p1 lab=tst[2:0]}
+C {ipin.sym} 10 -970 0 0 {name=p1 lab=tst[2]}
 C {lab_pin.sym} 330 -910 0 1 {name=p15 sig_type=std_logic lab=vdd_vco}
 C {lab_pin.sym} 330 -890 0 1 {name=p20 sig_type=std_logic lab=tst_bb[2:0]}
 C {lab_pin.sym} 330 -870 0 1 {name=p21 sig_type=std_logic lab=tst_b[2:0]}
@@ -378,3 +386,9 @@ L=9
 model=res_high_po_0p35
 spiceprefix=X
 mult=1}
+C {bus_connect_nolab.sym} 30 -960 0 1 {name=r10}
+C {bus_connect_nolab.sym} 30 -940 0 1 {name=r11}
+C {bus_connect_nolab.sym} 30 -920 0 1 {name=r12}
+C {ipin.sym} 10 -950 0 0 {name=p9 lab=tst[1]}
+C {ipin.sym} 10 -930 0 0 {name=p14 lab=tst[0]}
+C {lab_wire.sym} 30 -880 0 0 {name=p23 sig_type=std_logic lab=tst[2:0]}

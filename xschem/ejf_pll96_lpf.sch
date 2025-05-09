@@ -206,6 +206,12 @@ N 390 -150 630 -150 {
 lab=#net1}
 N 670 -270 690 -270 {
 lab=rsc_bb[1]}
+N 570 -940 570 -870 {
+lab=rsc[1:0]}
+N 540 -950 560 -950 {
+lab=rsc[1]}
+N 540 -930 560 -930 {
+lab=rsc[0]}
 C {title_nologo.sym} 200 0 0 0 {name=l1 author="ejfogleman"}
 C {iopin.sym} 90 -120 0 1 {name=p1 lab=vc}
 C {iopin.sym} 90 -780 0 1 {name=p2 lab=vdd}
@@ -374,7 +380,7 @@ spiceprefix=X
 }
 C {lab_pin.sym} 630 -550 0 1 {name=p4 sig_type=std_logic lab=csc_bb}
 C {lab_pin.sym} 1050 -550 0 1 {name=p6 sig_type=std_logic lab=csc_bb}
-C {ipin.sym} 570 -870 0 0 {name=p8 lab=rsc[1:0]}
+C {ipin.sym} 540 -930 0 0 {name=p8 lab=rsc[0]}
 C {ejf_pll96_dbuf.sym} 720 -870 0 0 {name=x1[1:0]}
 C {lab_pin.sym} 870 -900 0 1 {name=p9 sig_type=std_logic lab=vdd}
 C {lab_pin.sym} 870 -840 0 1 {name=p11 sig_type=std_logic lab=gnd}
@@ -382,3 +388,7 @@ C {lab_pin.sym} 870 -880 0 1 {name=p12 sig_type=std_logic lab=rsc_bb[1:0]}
 C {lab_pin.sym} 870 -860 0 1 {name=p13 sig_type=std_logic lab=rsc_b[1:0]}
 C {lab_pin.sym} 690 -350 0 1 {name=p14 sig_type=std_logic lab=rsc_bb[0]}
 C {lab_pin.sym} 690 -270 0 1 {name=p15 sig_type=std_logic lab=rsc_bb[1]}
+C {ipin.sym} 540 -950 0 0 {name=p16 lab=rsc[1]}
+C {lab_pin.sym} 570 -870 0 0 {name=p17 sig_type=std_logic lab=rsc[1:0]}
+C {bus_connect_nolab.sym} 570 -940 0 1 {name=r7}
+C {bus_connect_nolab.sym} 570 -920 0 1 {name=r8}

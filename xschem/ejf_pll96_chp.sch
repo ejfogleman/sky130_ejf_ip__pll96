@@ -348,7 +348,7 @@ lab=b_b[1]}
 N 4220 -1110 4220 -1080 {
 lab=b_bb[0]}
 N 4300 -1110 4300 -1080 {
-lab=b1_b}
+lab=b_b[0]}
 N 5470 -290 5960 -290 {
 lab=mn1cg}
 N 5350 -160 5560 -160 {
@@ -602,6 +602,14 @@ N 4470 -810 4520 -810 {
 lab=mp1g}
 N 3740 -760 4500 -760 {
 lab=ibnp_1u}
+N 5040 -1270 5060 -1270 {
+lab=b[2]}
+N 5040 -1250 5060 -1250 {
+lab=b[1]}
+N 5040 -1230 5060 -1230 {
+lab=b[0]}
+N 5070 -1260 5070 -1160 {
+lab=b[2:0]}
 C {title_nologo.sym} 3910 0 0 0 {name=l1 author="ejfogleman"}
 C {iopin.sym} 3620 -960 0 1 {name=p1 lab=vdd}
 C {iopin.sym} 4290 -90 0 1 {name=p2 lab=gnd}
@@ -905,7 +913,7 @@ model=pfet_01v8_lvt
 spiceprefix=X
 }
 C {ipin.sym} 4630 -1160 0 0 {name=p26 lab=en}
-C {ipin.sym} 5080 -1160 0 0 {name=p28 lab=b[2:0]}
+C {ipin.sym} 5040 -1270 0 0 {name=p28 lab=b[2]}
 C {lab_pin.sym} 4290 -130 0 0 {name=p40 sig_type=std_logic lab=en_b}
 C {sky130_fd_pr/nfet3_01v8.sym} 4360 -130 0 0 {name=M12
 W=1
@@ -1458,3 +1466,9 @@ sa=0 sb=0 sd=0
 model=pfet_01v8_hvt
 spiceprefix=X
 }
+C {ipin.sym} 5040 -1250 0 0 {name=p31 lab=b[1]}
+C {ipin.sym} 5040 -1230 0 0 {name=p32 lab=b[0]}
+C {lab_pin.sym} 5070 -1160 0 0 {name=p33 sig_type=std_logic lab=b[2:0]}
+C {bus_connect_nolab.sym} 5070 -1260 0 1 {name=r15}
+C {bus_connect_nolab.sym} 5070 -1240 0 1 {name=r16}
+C {bus_connect_nolab.sym} 5070 -1220 0 1 {name=r17}
