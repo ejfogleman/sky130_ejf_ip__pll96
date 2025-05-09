@@ -158,12 +158,12 @@ C {gnd.sym} 980 -770 0 0 {name=l10 lab=GND}
 C {lab_wire.sym} 980 -880 0 1 {name=p13 sig_type=std_logic lab=vdd_ref}
 C {vsource.sym} 10 -770 0 0 {name=V1 value="0 PULSE(0 \{VDD\} \{TD_REF\} \{T_RF\} \{T_RF\} \{T_REF/2\} \{T_REF\})"}
 C {gnd.sym} 10 -740 0 0 {name=l3 lab=GND}
-C {devices/code_shown.sym} 0 100 0 0 {name=s1 only_toplevel=false value="* ejf_pfd test
+C {devices/code_shown.sym} 10 100 0 0 {name=s1 only_toplevel=false value="* ejf_pfd test
 .lib ~/.volare/sky130A/libs.tech/combined/sky130.lib.spice tt
 .include ~/.volare/sky130A/libs.ref/sky130_fd_sc_ls/spice/sky130_fd_sc_ls.spice
 .option temp=27
 .param VDD=1.8
-.param T_REF=200n
+.param T_REF=62.5n
 .param TD_REF=50n
 .param T_RF=300p
 .param T_RAMP=50n
@@ -177,27 +177,27 @@ C {devices/code_shown.sym} 0 100 0 0 {name=s1 only_toplevel=false value="* ejf_p
 .param VR1=0
 * feedback F divider
 .param VS3=0
-.param VS2=1.8
-.param VS1=0
+.param VS2=0
+.param VS1=1.8
 .param VS0=0
 .param VP3=0
-.param VP2=1.8
-.param VP1=1.8
-.param VP0=1.8
+.param VP2=0
+.param VP1=0
+.param VP0=0
 .param VEN3=0
-.param VEN2=1.8
-.param VEN1=1.8
+.param VEN2=0
+.param VEN1=0
 .param VEN0=1.8
 .param VENS=1.8
 * charge pump bias
 .param VCPB2=1.8
 .param VCPB1=0
-.param VCPB0=1.8
+.param VCPB0=0
 .param VREPL=1.8
 * loop filter scale
-.param VCSC=1.8
+.param VCSC=0
 .param VRSC1=0
-.param VRSC0=0
+.param VRSC0=1.8
 * vco test
 .param VTST0=0
 .param VTST1=0
