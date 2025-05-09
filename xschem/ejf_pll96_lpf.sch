@@ -246,7 +246,7 @@ model=pfet_01v8_lvt
 spiceprefix=X
 }
 C {lab_wire.sym} 390 -440 0 1 {name=p3 sig_type=std_logic lab=mpc2g}
-C {sky130_fd_pr/pfet3_01v8_lvt.sym} 570 -660 3 0 {name=MPC2[18:10]
+C {sky130_fd_pr/pfet3_01v8_lvt.sym} 570 -660 3 0 {name=MPC2[19:10]
 W=24
 L=11
 body=vdd
