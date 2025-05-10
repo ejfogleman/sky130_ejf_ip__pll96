@@ -125,3 +125,5 @@ T {lpf_rsc[1]} -125 -74 0 0 0.2 0.2 {}
 T {divf_ens} -125 266 0 0 0.2 0.2 {}
 T {lpf_rsc[0]} -125 -54 0 0 0.2 0.2 {}
 T {gnd_div} 125 266 0 1 0.2 0.2 {}
+T { Copyright (c) 2025 Eric Fogleman
+ SPDX-License-Identifier: Apache-2.0} 0 -270 0 0 0.1 0.1 {vcenter=TRUE hcenter=TRUE}
