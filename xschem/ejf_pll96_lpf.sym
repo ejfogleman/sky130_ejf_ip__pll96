@@ -32,3 +32,5 @@ T {gnd} 65 26 0 0 0.2 0.2 {}
 T {csc} -85 -24 0 0 0.2 0.2 {}
 T {rsc[0]} -85 16 0 0 0.2 0.2 {}
 T {rsc[1]} -85 -4 0 0 0.2 0.2 {}
+T { Copyright (c) 2025 Eric Fogleman
+ SPDX-License-Identifier: Apache-2.0} 0 -30 0 0 0.1 0.1 {vcenter=TRUE hcenter=TRUE}

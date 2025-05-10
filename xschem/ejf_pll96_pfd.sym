@@ -28,7 +28,7 @@ B 5 147.5 -52.5 152.5 -47.5 {name=vdd dir=inout}
 B 5 147.5 47.5 152.5 52.5 {name=gnd dir=inout}
 B 5 147.5 -12.5 152.5 -7.5 {name=qa_b dir=out}
 B 5 147.5 27.5 152.5 32.5 {name=qb_b dir=out}
-T {@symname} -49.5 -6 0 0 0.3 0.3 {}
+T {@symname} 0.5 -6 0 0 0.3 0.3 {hcenter=TRUE}
 T {@name} 135 -72 0 0 0.2 0.2 {}
 T {qa} 125 -34 0 1 0.2 0.2 {}
 T {a} -125 -14 0 0 0.2 0.2 {}
@@ -38,3 +38,5 @@ T {vdd} 125 -54 0 1 0.2 0.2 {}
 T {gnd} 125 46 0 1 0.2 0.2 {}
 T {qa_b} 125 -14 0 1 0.2 0.2 {}
 T {qb_b} 125 26 0 1 0.2 0.2 {}
+T { Copyright (c) 2025 Eric Fogleman
+ SPDX-License-Identifier: Apache-2.0} 0 -50 0 0 0.1 0.1 {vcenter=TRUE hcenter=TRUE}

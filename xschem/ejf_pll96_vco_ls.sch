@@ -5,75 +5,75 @@ K {}
 V {}
 S {}
 E {}
-N 360 -310 380 -310 {lab=inp}
-N 360 -170 380 -170 {lab=inp}
-N 420 -140 420 -90 {lab=gnd}
-N 460 -450 510 -450 {lab=xxx}
-N 420 -500 420 -480 {lab=vdd}
-N 300 -240 360 -240 {lab=inp}
-N 360 -240 360 -170 {lab=inp}
-N 690 -310 710 -310 {lab=inn}
-N 690 -170 710 -170 {lab=inn}
-N 650 -140 650 -90 {lab=gnd}
-N 650 -500 650 -480 {lab=vdd}
-N 650 -420 650 -340 {lab=#net1}
-N 420 -500 650 -500 {lab=vdd}
-N 420 -420 420 -340 {lab=#net2}
-N 420 -240 900 -240 {lab=ls_outn}
-N 420 -240 420 -200 {lab=ls_outn}
-N 420 -260 510 -260 {lab=ls_outn}
-N 420 -280 420 -260 {lab=ls_outn}
-N 710 -310 710 -170 {lab=inn}
-N 650 -220 650 -200 {lab=xxx}
-N 560 -450 610 -450 {lab=ls_outn}
-N 560 -260 650 -260 {lab=xxx}
-N 650 -280 650 -260 {lab=xxx}
-N 510 -450 560 -260 {lab=xxx}
-N 510 -260 560 -450 {lab=ls_outn}
-N 300 -500 420 -500 {lab=vdd}
-N 1070 -310 1090 -310 {lab=xxx}
-N 1070 -170 1090 -170 {lab=xxx}
-N 1130 -140 1130 -90 {lab=gnd}
-N 1130 -220 1130 -200 {lab=outn}
-N 1070 -220 1070 -170 {lab=xxx}
-N 1130 -220 1210 -220 {lab=outn}
-N 1130 -280 1130 -220 {lab=outn}
-N 1130 -500 1130 -340 {
+N 120 -340 140 -340 {lab=inp}
+N 120 -200 140 -200 {lab=inp}
+N 180 -170 180 -120 {lab=gnd}
+N 220 -480 270 -480 {lab=ls_outp}
+N 180 -530 180 -510 {lab=vdd}
+N 60 -270 120 -270 {lab=inp}
+N 120 -270 120 -200 {lab=inp}
+N 450 -340 470 -340 {lab=inn}
+N 450 -200 470 -200 {lab=inn}
+N 410 -170 410 -120 {lab=gnd}
+N 410 -530 410 -510 {lab=vdd}
+N 410 -450 410 -370 {lab=#net1}
+N 180 -530 410 -530 {lab=vdd}
+N 180 -450 180 -370 {lab=#net2}
+N 180 -270 660 -270 {lab=ls_outn}
+N 180 -270 180 -230 {lab=ls_outn}
+N 180 -290 270 -290 {lab=ls_outn}
+N 180 -310 180 -290 {lab=ls_outn}
+N 470 -340 470 -200 {lab=inn}
+N 410 -250 410 -230 {lab=ls_outp}
+N 320 -480 370 -480 {lab=ls_outn}
+N 320 -290 410 -290 {lab=ls_outp}
+N 410 -310 410 -290 {lab=ls_outp}
+N 270 -480 320 -290 {lab=ls_outp}
+N 270 -290 320 -480 {lab=ls_outn}
+N 60 -530 180 -530 {lab=vdd}
+N 830 -340 850 -340 {lab=ls_outp}
+N 830 -200 850 -200 {lab=ls_outp}
+N 890 -170 890 -120 {lab=gnd}
+N 890 -250 890 -230 {lab=outn}
+N 830 -250 830 -200 {lab=ls_outp}
+N 890 -250 970 -250 {lab=outn}
+N 890 -310 890 -250 {lab=outn}
+N 890 -530 890 -370 {
 lab=vdd}
-N 960 -500 1130 -500 {lab=vdd}
-N 900 -310 920 -310 {lab=ls_outn}
-N 900 -170 920 -170 {lab=ls_outn}
-N 960 -140 960 -90 {lab=gnd}
-N 900 -240 900 -170 {lab=ls_outn}
-N 960 -240 960 -200 {lab=outp}
-N 960 -500 960 -340 {
+N 720 -530 890 -530 {lab=vdd}
+N 660 -340 680 -340 {lab=ls_outn}
+N 660 -200 680 -200 {lab=ls_outn}
+N 720 -170 720 -120 {lab=gnd}
+N 660 -270 660 -200 {lab=ls_outn}
+N 720 -270 720 -230 {lab=outp}
+N 720 -530 720 -370 {
 lab=vdd}
-N 650 -500 960 -500 {lab=vdd}
-N 300 -90 420 -90 {lab=gnd}
-N 420 -90 650 -90 {lab=gnd}
-N 650 -90 960 -90 {lab=gnd}
-N 960 -90 1130 -90 {lab=gnd}
-N 300 -120 710 -120 {lab=inn}
-N 710 -170 710 -120 {
+N 410 -530 720 -530 {lab=vdd}
+N 60 -120 180 -120 {lab=gnd}
+N 180 -120 410 -120 {lab=gnd}
+N 410 -120 720 -120 {lab=gnd}
+N 720 -120 890 -120 {lab=gnd}
+N 60 -150 470 -150 {lab=inn}
+N 470 -200 470 -150 {
 lab=inn}
-N 360 -310 360 -240 {lab=inp}
-N 420 -260 420 -240 {lab=ls_outn}
-N 900 -310 900 -240 {lab=ls_outn}
-N 960 -280 960 -240 {lab=outp}
-N 960 -240 1210 -240 {lab=outp}
-N 650 -220 1070 -220 {
-lab=xxx}
-N 650 -260 650 -220 {lab=xxx}
-N 1070 -310 1070 -220 {lab=xxx}
-C {ipin.sym} 300 -240 0 0 {name=p7 lab=inp}
-C {opin.sym} 1210 -220 0 0 {name=p8 lab=outn}
-C {ipin.sym} 300 -120 0 0 {name=p9 lab=inn}
-C {opin.sym} 1210 -240 0 0 {name=p10 lab=outp
+N 120 -340 120 -270 {lab=inp}
+N 180 -290 180 -270 {lab=ls_outn}
+N 660 -340 660 -270 {lab=ls_outn}
+N 720 -310 720 -270 {lab=outp}
+N 720 -270 970 -270 {lab=outp}
+N 410 -250 830 -250 {
+lab=ls_outp}
+N 410 -290 410 -250 {lab=ls_outp}
+N 830 -340 830 -250 {lab=ls_outp}
+C {ipin.sym} 60 -270 0 0 {name=p7 lab=inp}
+C {opin.sym} 970 -250 0 0 {name=p8 lab=outn}
+C {ipin.sym} 60 -150 0 0 {name=p9 lab=inn}
+C {opin.sym} 970 -270 0 0 {name=p10 lab=outp
 }
-C {iopin.sym} 300 -500 0 1 {name=p11 lab=vdd}
-C {iopin.sym} 300 -90 0 1 {name=p12 lab=gnd}
-C {title_nologo.sym} 140 0 0 0 {name=l1 author="ejfogleman"}
-C {sky130_fd_pr/pfet3_01v8_hvt.sym} 630 -450 0 0 {name=M5
+C {iopin.sym} 60 -530 0 1 {name=p11 lab=vdd}
+C {iopin.sym} 60 -120 0 1 {name=p12 lab=gnd}
+C {title_ejf.sym} 200 -40 0 0 {name=l1 author="ejfogleman"}
+C {sky130_fd_pr/pfet3_01v8_hvt.sym} 390 -480 0 0 {name=M5
 W=2
 L=0.15
 body=vdd
@@ -88,7 +88,7 @@ sa=0 sb=0 sd=0
 model=pfet_01v8_hvt
 spiceprefix=X
 }
-C {sky130_fd_pr/nfet3_01v8.sym} 400 -170 0 0 {name=M1
+C {sky130_fd_pr/nfet3_01v8.sym} 160 -200 0 0 {name=M1
 W=2
 L=0.15
 body=gnd
@@ -103,7 +103,7 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {sky130_fd_pr/nfet3_01v8.sym} 670 -170 0 1 {name=M2
+C {sky130_fd_pr/nfet3_01v8.sym} 430 -200 0 1 {name=M2
 W=2
 L=0.15
 body=gnd
@@ -118,7 +118,7 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {sky130_fd_pr/pfet3_01v8_hvt.sym} 440 -450 0 1 {name=M3
+C {sky130_fd_pr/pfet3_01v8_hvt.sym} 200 -480 0 1 {name=M3
 W=2
 L=0.15
 body=vdd
@@ -133,7 +133,7 @@ sa=0 sb=0 sd=0
 model=pfet_01v8_hvt
 spiceprefix=X
 }
-C {sky130_fd_pr/pfet3_01v8_hvt.sym} 400 -310 0 0 {name=M4
+C {sky130_fd_pr/pfet3_01v8_hvt.sym} 160 -340 0 0 {name=M4
 W=2
 L=0.15
 body=vdd
@@ -148,7 +148,7 @@ sa=0 sb=0 sd=0
 model=pfet_01v8_hvt
 spiceprefix=X
 }
-C {sky130_fd_pr/pfet3_01v8_hvt.sym} 670 -310 0 1 {name=M6
+C {sky130_fd_pr/pfet3_01v8_hvt.sym} 430 -340 0 1 {name=M6
 W=2
 L=0.15
 body=vdd
@@ -163,7 +163,7 @@ sa=0 sb=0 sd=0
 model=pfet_01v8_hvt
 spiceprefix=X
 }
-C {sky130_fd_pr/nfet3_01v8.sym} 1110 -170 0 0 {name=M7
+C {sky130_fd_pr/nfet3_01v8.sym} 870 -200 0 0 {name=M7
 W=2
 L=0.15
 body=gnd
@@ -178,7 +178,7 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {sky130_fd_pr/pfet3_01v8_hvt.sym} 1110 -310 0 0 {name=M8
+C {sky130_fd_pr/pfet3_01v8_hvt.sym} 870 -340 0 0 {name=M8
 W=4
 L=0.15
 body=vdd
@@ -193,7 +193,7 @@ sa=0 sb=0 sd=0
 model=pfet_01v8_hvt
 spiceprefix=X
 }
-C {sky130_fd_pr/nfet3_01v8.sym} 940 -170 0 0 {name=M9
+C {sky130_fd_pr/nfet3_01v8.sym} 700 -200 0 0 {name=M9
 W=2
 L=0.15
 body=gnd
@@ -208,7 +208,7 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {sky130_fd_pr/pfet3_01v8_hvt.sym} 940 -310 0 0 {name=M10
+C {sky130_fd_pr/pfet3_01v8_hvt.sym} 700 -340 0 0 {name=M10
 W=4
 L=0.15
 body=vdd
@@ -223,5 +223,7 @@ sa=0 sb=0 sd=0
 model=pfet_01v8_hvt
 spiceprefix=X
 }
-C {lab_wire.sym} 790 -240 0 0 {name=p1 sig_type=std_logic lab=ls_outn}
-C {lab_wire.sym} 790 -220 0 0 {name=p2 sig_type=std_logic lab=ls_outp}
+C {lab_wire.sym} 550 -270 0 0 {name=p1 sig_type=std_logic lab=ls_outn}
+C {lab_wire.sym} 550 -250 0 0 {name=p2 sig_type=std_logic lab=ls_outp}
+C {copyright.sym} 0 10 0 0 {name=s1 place=header value="* Copyright (c) Eric Fogleman 2025 
+* SPDX-License-Identifier: Apache-2.0"}

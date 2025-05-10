@@ -5,59 +5,59 @@ K {}
 V {}
 S {}
 E {}
-N 310 -300 310 -270 {
+N 290 -370 290 -340 {
 lab=vdd}
-N 310 -200 310 -190 {
+N 290 -270 290 -260 {
 lab=y_b}
-N 250 -240 270 -240 {
+N 230 -310 250 -310 {
 lab=a}
-N 250 -160 270 -160 {
+N 230 -230 250 -230 {
 lab=a}
-N 310 -130 310 -100 {
-lab=xxx}
-N 310 -200 470 -200 {
+N 290 -200 290 -170 {
+lab=gnd}
+N 290 -270 450 -270 {
 lab=y_b}
-N 310 -210 310 -200 {
+N 290 -280 290 -270 {
 lab=y_b}
-N 250 -200 250 -160 {
+N 230 -270 230 -230 {
 lab=a}
-N 220 -200 250 -200 {
+N 200 -270 230 -270 {
 lab=a}
-N 250 -240 250 -200 {
+N 230 -310 230 -270 {
 lab=a}
-N 530 -300 530 -270 {
+N 510 -370 510 -340 {
 lab=vdd}
-N 530 -200 530 -190 {
+N 510 -270 510 -260 {
 lab=y}
-N 470 -240 490 -240 {
+N 450 -310 470 -310 {
 lab=y_b}
-N 470 -160 490 -160 {
+N 450 -230 470 -230 {
 lab=y_b}
-N 530 -130 530 -100 {
-lab=xxx}
-N 530 -200 610 -200 {
+N 510 -200 510 -170 {
+lab=gnd}
+N 510 -270 590 -270 {
 lab=y}
-N 530 -210 530 -200 {
+N 510 -280 510 -270 {
 lab=y}
-N 470 -200 470 -160 {
+N 450 -270 450 -230 {
 lab=y_b}
-N 470 -240 470 -200 {
+N 450 -310 450 -270 {
 lab=y_b}
-N 310 -300 530 -300 {
+N 290 -370 510 -370 {
 lab=vdd}
-N 220 -300 310 -300 {
+N 200 -370 290 -370 {
 lab=vdd}
-N 310 -100 530 -100 {
-lab=xxx}
-N 220 -100 310 -100 {
-lab=xxx}
-N 470 -160 470 -120 {
+N 290 -170 510 -170 {
+lab=gnd}
+N 200 -170 290 -170 {
+lab=gnd}
+N 450 -230 450 -190 {
 lab=y_b}
-N 470 -120 610 -120 {
+N 450 -190 590 -190 {
 lab=y_b}
-C {title_nologo.sym} 90 0 0 0 {name=l1 author="ejfogleman"}
-C {ipin.sym} 220 -200 0 0 {name=p26 lab=a}
-C {sky130_fd_pr/pfet3_01v8_hvt.sym} 290 -240 0 0 {name=MP1
+C {title_ejf.sym} 200 -40 0 0 {name=l1 author="ejfogleman"}
+C {ipin.sym} 200 -270 0 0 {name=p26 lab=a}
+C {sky130_fd_pr/pfet3_01v8_hvt.sym} 270 -310 0 0 {name=MP1
 W=2
 L=0.15
 body=vdd
@@ -72,7 +72,7 @@ sa=0 sb=0 sd=0
 model=pfet_01v8_hvt
 spiceprefix=X
 }
-C {sky130_fd_pr/pfet3_01v8_hvt.sym} 510 -240 0 0 {name=MP3
+C {sky130_fd_pr/pfet3_01v8_hvt.sym} 490 -310 0 0 {name=MP3
 W=2
 L=0.15
 body=vdd
@@ -87,7 +87,7 @@ sa=0 sb=0 sd=0
 model=pfet_01v8_hvt
 spiceprefix=X
 }
-C {sky130_fd_pr/nfet3_01v8.sym} 510 -160 0 0 {name=MN4
+C {sky130_fd_pr/nfet3_01v8.sym} 490 -230 0 0 {name=MN4
 W=1
 L=0.15
 body=gnd
@@ -102,7 +102,7 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {sky130_fd_pr/nfet3_01v8.sym} 290 -160 0 0 {name=MN2
+C {sky130_fd_pr/nfet3_01v8.sym} 270 -230 0 0 {name=MN2
 W=1
 L=0.15
 body=gnd
@@ -117,7 +117,9 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {iopin.sym} 220 -300 0 1 {name=p1 lab=vdd}
-C {iopin.sym} 220 -100 0 1 {name=p2 lab=gnd}
-C {opin.sym} 610 -200 0 0 {name=p3 lab=y}
-C {opin.sym} 610 -120 0 0 {name=p4 lab=y_b}
+C {iopin.sym} 200 -370 0 1 {name=p1 lab=vdd}
+C {iopin.sym} 200 -170 0 1 {name=p2 lab=gnd}
+C {opin.sym} 590 -270 0 0 {name=p3 lab=y}
+C {opin.sym} 590 -190 0 0 {name=p4 lab=y_b}
+C {copyright.sym} 0 10 0 0 {name=s1 place=header value="* Copyright (c) Eric Fogleman 2025 
+* SPDX-License-Identifier: Apache-2.0"}

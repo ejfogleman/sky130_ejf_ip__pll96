@@ -44,3 +44,5 @@ T {q} 125 -4 0 1 0.2 0.2 {}
 T {vdd} 125 -64 0 1 0.2 0.2 {}
 T {gnd} 125 56 0 1 0.2 0.2 {}
 T {en} -125 56 0 0 0.2 0.2 {}
+T { Copyright (c) 2025 Eric Fogleman
+ SPDX-License-Identifier: Apache-2.0} 0 -60 0 0 0.1 0.1 {vcenter=TRUE hcenter=TRUE}

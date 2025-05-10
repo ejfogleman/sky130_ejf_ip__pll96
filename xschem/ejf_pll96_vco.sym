@@ -41,3 +41,5 @@ T {gnd_vco} -125 76 0 0 0.2 0.2 {}
 T {tst[0]} -125 56 0 0 0.2 0.2 {}
 T {tst[1]} -125 36 0 0 0.2 0.2 {}
 T {tst[2]} -125 16 0 0 0.2 0.2 {}
+T { Copyright (c) 2025 Eric Fogleman
+ SPDX-License-Identifier: Apache-2.0} 0 -40 0 0 0.1 0.1 {vcenter=TRUE hcenter=TRUE}

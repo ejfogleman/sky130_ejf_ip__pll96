@@ -46,7 +46,7 @@ B 5 147.5 -132.5 152.5 -127.5 {name=vdd dir=inout}
 B 5 147.5 127.5 152.5 132.5 {name=gnd dir=inout}
 B 5 -152.5 107.5 -147.5 112.5 {name=en[0] dir=in}
 B 5 -152.5 127.5 -147.5 132.5 {name=ens dir=in}
-T {@symname} -63 -6 0 0 0.3 0.3 {}
+T {@symname} -3 -6 0 0 0.3 0.3 {hcenter=TRUE}
 T {@name} 135 -152 0 0 0.2 0.2 {}
 T {p[3]} -125 -34 0 0 0.2 0.2 {}
 T {clk} -125 -134 0 0 0.2 0.2 {}
@@ -65,3 +65,5 @@ T {vdd} 125 -134 0 1 0.2 0.2 {}
 T {gnd} 125 126 0 1 0.2 0.2 {}
 T {en[0]} -125 106 0 0 0.2 0.2 {}
 T {ens} -125 126 0 0 0.2 0.2 {}
+T { Copyright (c) 2025 Eric Fogleman
+ SPDX-License-Identifier: Apache-2.0} 0 -130 0 0 0.1 0.1 {vcenter=TRUE hcenter=TRUE}

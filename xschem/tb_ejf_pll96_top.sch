@@ -203,7 +203,7 @@ C {devices/code_shown.sym} 10 100 0 0 {name=s1 only_toplevel=false value="* ejf_
 .param VTST1=0
 .param VTST2=0
 "}
-C {devices/code_shown.sym} 850 100 0 0 {name=s2 only_toplevel=false value="* Run transient
+C {devices/code_shown.sym} 860 100 0 0 {name=s2 only_toplevel=false value="* Run transient
 * default reltol=1e-3 vntol=1e-6 abstol=1e-12
 .options  reltol=1e-4 vntol=1e-7 abstol=1e-13
 .options klu

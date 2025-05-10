@@ -9,97 +9,99 @@ T {Input divider
 div r[1:0]
 1 ==> 00
 2 ==> 01
-4 ==> 11} 400 -150 0 0 0.4 0.4 {}
-N 40 -430 70 -430 {
+4 ==> 11} 600 -190 0 0 0.4 0.4 {}
+N 240 -470 270 -470 {
 lab=#net1}
-N 40 -430 40 -380 {
+N 240 -470 240 -420 {
 lab=#net1}
-N 40 -380 280 -380 {
+N 240 -420 480 -420 {
 lab=#net1}
-N 280 -430 280 -380 {
+N 480 -470 480 -420 {
 lab=#net1}
-N 250 -430 280 -430 {
+N 450 -470 480 -470 {
 lab=#net1}
-N 300 -410 400 -410 {
+N 500 -450 600 -450 {
 lab=#net2}
-N 370 -430 400 -430 {
+N 570 -470 600 -470 {
 lab=#net3}
-N 370 -430 370 -380 {
+N 570 -470 570 -420 {
 lab=#net3}
-N 370 -380 610 -380 {
+N 570 -420 810 -420 {
 lab=#net3}
-N 610 -430 610 -380 {
+N 810 -470 810 -420 {
 lab=#net3}
-N 580 -430 610 -430 {
+N 780 -470 810 -470 {
 lab=#net3}
-N 250 -260 500 -260 {
+N 450 -300 700 -300 {
 lab=#net4}
-N 300 -410 300 -340 {
+N 500 -450 500 -380 {
 lab=#net2}
-N 250 -410 300 -410 {
+N 450 -450 500 -450 {
 lab=#net2}
-N 140 -340 300 -340 {
+N 340 -380 500 -380 {
 lab=#net2}
-N 140 -340 140 -240 {
+N 340 -380 340 -280 {
 lab=#net2}
-N 140 -240 170 -240 {
+N 340 -280 370 -280 {
 lab=#net2}
-N 580 -410 630 -410 {
+N 780 -450 830 -450 {
 lab=#net5}
-N 630 -410 630 -340 {
+N 830 -450 830 -380 {
 lab=#net5}
-N 470 -340 630 -340 {
+N 670 -380 830 -380 {
 lab=#net5}
-N 470 -340 470 -220 {
+N 670 -380 670 -260 {
 lab=#net5}
-N 470 -220 510 -220 {
+N 670 -260 710 -260 {
 lab=#net5}
-N 0 -410 70 -410 {
+N 200 -450 270 -450 {
 lab=#net6}
-N 0 -280 170 -280 {
+N 200 -320 370 -320 {
 lab=#net6}
-N 40 -490 370 -490 {
+N 240 -530 570 -530 {
 lab=en}
-N 370 -490 370 -450 {
+N 570 -530 570 -490 {
 lab=en}
-N 370 -450 400 -450 {
+N 570 -490 600 -490 {
 lab=en}
-N 40 -450 70 -450 {
+N 240 -490 270 -490 {
 lab=en}
-N 40 -490 40 -450 {
+N 240 -530 240 -490 {
 lab=en}
-N -160 -490 40 -490 {
+N 40 -530 240 -530 {
 lab=en}
-N -170 -200 170 -200 {
+N 30 -240 370 -240 {
 lab=r[0]}
-N -170 -180 500 -180 {
+N 30 -220 700 -220 {
 lab=r[1]}
-N 580 -240 680 -240 {
+N 780 -280 880 -280 {
 lab=clk_r}
-N 0 -410 0 -280 {
+N 200 -450 200 -320 {
 lab=#net6}
-N -180 -390 -140 -390 {
+N 20 -430 60 -430 {
 lab=clk}
-N -160 -490 -160 -430 {
+N 40 -530 40 -470 {
 lab=en}
-N -170 -490 -160 -490 {
+N 30 -530 40 -530 {
 lab=en}
-N -160 -430 -140 -430 {
+N 40 -470 60 -470 {
 lab=en}
-N -20 -410 0 -410 {
+N 180 -450 200 -450 {
 lab=#net6}
-C {title_nologo.sym} 0 0 0 0 {name=l1 author="ejfogleman"}
-C {sky130_stdcells/dfrbp_2.sym} 160 -430 2 1 {name=xdff0 VGND=gnd VNB=gnd VPB=vdd VPWR=vdd prefix=sky130_fd_sc_ls__ 
+C {title_ejf.sym} 200 -40 0 0 {name=l1 author="ejfogleman"}
+C {sky130_stdcells/dfrbp_2.sym} 360 -470 2 1 {name=xdff0 VGND=gnd VNB=gnd VPB=vdd VPWR=vdd prefix=sky130_fd_sc_ls__ 
 }
-C {ipin.sym} -170 -390 0 0 {name=p1 lab=clk}
-C {sky130_stdcells/mux2_2.sym} 210 -260 0 0 {name=x1 VGND=gnd VNB=gnd VPB=vdd VPWR=vdd prefix=sky130_fd_sc_ls__ }
-C {sky130_stdcells/mux2_2.sym} 540 -240 0 0 {name=x2 VGND=gnd VNB=gnd VPB=vdd VPWR=vdd prefix=sky130_fd_sc_ls__ }
-C {sky130_stdcells/dfrbp_2.sym} 490 -430 2 1 {name=xdff1 VGND=gnd VNB=gnd VPB=vdd VPWR=vdd prefix=sky130_fd_sc_ls__ 
+C {ipin.sym} 30 -430 0 0 {name=p1 lab=clk}
+C {sky130_stdcells/mux2_2.sym} 410 -300 0 0 {name=x1 VGND=gnd VNB=gnd VPB=vdd VPWR=vdd prefix=sky130_fd_sc_ls__ }
+C {sky130_stdcells/mux2_2.sym} 740 -280 0 0 {name=x2 VGND=gnd VNB=gnd VPB=vdd VPWR=vdd prefix=sky130_fd_sc_ls__ }
+C {sky130_stdcells/dfrbp_2.sym} 690 -470 2 1 {name=xdff1 VGND=gnd VNB=gnd VPB=vdd VPWR=vdd prefix=sky130_fd_sc_ls__ 
 }
-C {iopin.sym} -170 -110 0 1 {name=p2 lab=vdd}
-C {iopin.sym} -170 -90 0 1 {name=p3 lab=gnd}
-C {ipin.sym} -170 -490 0 0 {name=p4 lab=en}
-C {ipin.sym} -170 -200 0 0 {name=p5 lab=r[0]}
-C {ipin.sym} -170 -180 0 0 {name=p6 lab=r[1]}
-C {opin.sym} 680 -240 0 0 {name=p7 lab=clk_r}
-C {sky130_stdcells/and2_2.sym} -80 -410 2 1 {name=x3 VGND=gnd VNB=gnd VPB=vdd VPWR=vdd prefix=sky130_fd_sc_ls__ }
+C {iopin.sym} 30 -150 0 1 {name=p2 lab=vdd}
+C {iopin.sym} 30 -130 0 1 {name=p3 lab=gnd}
+C {ipin.sym} 30 -530 0 0 {name=p4 lab=en}
+C {ipin.sym} 30 -240 0 0 {name=p5 lab=r[0]}
+C {ipin.sym} 30 -220 0 0 {name=p6 lab=r[1]}
+C {opin.sym} 880 -280 0 0 {name=p7 lab=clk_r}
+C {sky130_stdcells/and2_2.sym} 120 -450 2 1 {name=x3 VGND=gnd VNB=gnd VPB=vdd VPWR=vdd prefix=sky130_fd_sc_ls__ }
+C {copyright.sym} 0 10 0 0 {name=s1 place=header value="* Copyright (c) Eric Fogleman 2025 
+* SPDX-License-Identifier: Apache-2.0"}
