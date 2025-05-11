@@ -36,6 +36,7 @@ Skywater sky130 96 MHz clock multiplier PLL IP to generate a 96 MHz clock from r
 | gnd_vco | io | vco domain gnd |
 | vdd_div | io | divider domain supply, 1.8 V+/-10%, 65 uA |
 | gnd_div | io | divider domain gnd |
+| ibnp_1u | io | 1 uA bias current input (from nmos output to pmos diode) |
 | clk | i | ref clock input (4--16 MHz) |
 | divr_en | i | input divider enable (assert high to enable ref clock) |
 | divr_r[1:0] | i | input divide ratio |
