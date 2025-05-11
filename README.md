@@ -2,7 +2,7 @@
 
 Skywater sky130 96 MHz clock multiplier PLL IP to generate a 96 MHz clock from reference clocks ranging from 4 MHz to 16 MHz.
 
-* Copyright (c) 2024 Eric Fogleman
+* Copyright (c) 2025 Eric Fogleman
 * SPDX-License-Identifier: Apache-2.0
 
 # Specifications
