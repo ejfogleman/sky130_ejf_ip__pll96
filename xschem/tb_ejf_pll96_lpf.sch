@@ -24,8 +24,9 @@ N 480 -220 480 -170 {
 lab=vc}
 N 590 -310 640 -310 {
 lab=vdd}
-N 320 -260 370 -260 {}
-C {title_nologo.sym} 110 0 0 0 {name=l1 author="ejfogleman"}
+N 320 -260 370 -260 {
+lab=rsc[0]}
+C {title_ejf.sym} 110 0 0 0 {name=l1 author="ejfogleman"}
 C {vsource.sym} 0 -160 0 0 {name=V38 value=\{VCSC\} savecurrent=false}
 C {gnd.sym} 0 -130 0 0 {name=V39 lab=GND
 value=\{VS3\}}
@@ -39,7 +40,7 @@ C {lab_wire.sym} 640 -310 0 1 {name=p2 sig_type=std_logic lab=vdd}
 C {lab_wire.sym} 320 -280 0 1 {name=p3 sig_type=std_logic lab=rsc[1]}
 C {gnd.sym} 480 -110 0 0 {name=l4 lab=GND}
 C {lab_wire.sym} 480 -190 0 1 {name=p4 sig_type=std_logic lab=vc}
-C {devices/code_shown.sym} -250 60 0 0 {name=s1 only_toplevel=false value="* ejf_pfd test
+C {devices/code_shown.sym} -260 140 0 0 {name=s1 only_toplevel=false value="* ejf_pfd test
 .lib ~/.volare/sky130A/libs.tech/combined/sky130.lib.spice tt
 .include ~/.volare/sky130A/libs.ref/sky130_fd_sc_ls/spice/sky130_fd_sc_ls.spice
 .option temp=27
@@ -49,7 +50,7 @@ C {devices/code_shown.sym} -250 60 0 0 {name=s1 only_toplevel=false value="* ejf
 .param VRSC0=1.8
 .param VC=0.9
 "}
-C {devices/code_shown.sym} 590 60 0 0 {name=s2 only_toplevel=false value="* Run transient
+C {devices/code_shown.sym} 580 140 0 0 {name=s2 only_toplevel=false value="* Run transient
 * default reltol=1e-3 vntol=1e-6 abstol=1e-12
 .options  reltol=1e-4 vntol=1e-7 abstol=1e-13
 .control
@@ -74,3 +75,5 @@ C {gnd.sym} 170 -130 0 0 {name=V4 lab=GND
 value=\{VS3\}}
 C {lab_wire.sym} 170 -240 0 1 {name=p7 sig_type=std_logic lab=rsc[0]}
 C {lab_wire.sym} 320 -260 0 1 {name=p8 sig_type=std_logic lab=rsc[0]}
+C {copyright.sym} -90 40 0 0 {name=s3 place=header value="* Copyright (c) Eric Fogleman 2025 
+* SPDX-License-Identifier: Apache-2.0"}

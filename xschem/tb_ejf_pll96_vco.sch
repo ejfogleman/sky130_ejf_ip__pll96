@@ -37,7 +37,7 @@ N 180 -700 180 -670 {
 lab=#net1}
 C {vsource.sym} 70 -450 0 0 {name=V_VDD value=\{VDD\} savecurrent=false}
 C {gnd.sym} 70 -420 0 0 {name=l10 lab=GND}
-C {devices/code_shown.sym} -40 -200 0 0 {name=s1 only_toplevel=false value="* ejf_delaycell test
+C {devices/code_shown.sym} -40 -180 0 0 {name=s1 only_toplevel=false value="* ejf_delaycell test
 .lib ~/.volare/sky130A/libs.tech/combined/sky130.lib.spice tt
 .include ~/.volare/sky130A/libs.ref/sky130_fd_sc_ls/spice/sky130_fd_sc_ls.spice
 .option temp=27
@@ -51,7 +51,7 @@ C {devices/code_shown.sym} -40 -200 0 0 {name=s1 only_toplevel=false value="* ej
 .param VTHI=0
 .param RC=1
 "}
-C {devices/code_shown.sym} 800 -210 0 0 {name=s2 only_toplevel=false value="* Run transient
+C {devices/code_shown.sym} 800 -190 0 0 {name=s2 only_toplevel=false value="* Run transient
 * default reltol=1e-3 vntol=1e-6 abstol=1e-12
 .options  reltol=1e-6 vntol=1e-9 abstol=1e-15
 .control
@@ -73,7 +73,7 @@ C {parax_cap.sym} 1030 -700 0 0 {name=C1 gnd=0 value=\{CP\} m=1}
 C {parax_cap.sym} 940 -680 0 0 {name=C2 gnd=0 value=\{CP\} m=1}
 C {lab_wire.sym} 870 -710 0 1 {name=p14 sig_type=std_logic lab=vcop}
 C {lab_wire.sym} 870 -690 0 1 {name=p15 sig_type=std_logic lab=vcon}
-C {title_nologo.sym} 200 -310 0 0 {name=l1 author="ejfogleman"
+C {title_ejf.sym} 200 -310 0 0 {name=l1 author="ejfogleman"
 value="* ejf_delaycell test
 .lib ~/.volare/sky130A/libs.tech/combined/sky130.lib.spice tt
 .include ~/.volare/sky130A/libs.ref/sky130_fd_sc_ls/spice/sky130_fd_sc_ls.spice
@@ -110,3 +110,5 @@ value=\{RC\}
 m=1}
 C {gnd.sym} 180 -610 0 0 {name=V1 lab=GND
 value=\{VS3\}}
+C {copyright.sym} 0 -270 0 0 {name=s3 place=header value="* Copyright (c) Eric Fogleman 2025 
+* SPDX-License-Identifier: Apache-2.0"}

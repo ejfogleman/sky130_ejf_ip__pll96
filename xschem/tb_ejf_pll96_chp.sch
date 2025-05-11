@@ -27,7 +27,7 @@ lab=cp}
 N 1360 -320 1400 -320 {
 lab=#net1}
 N 830 -210 890 -210 {lab=repl}
-N 830 -230 890 -230 {lab=b[2:0]}
+N 830 -230 890 -230 {lab=b[0]}
 N 830 -190 890 -190 {lab=en}
 N 1040 -160 1040 -130 {
 lab=ibnp_1u}
@@ -40,15 +40,15 @@ N 500 -380 500 -360 {lab=en}
 N 200 -380 200 -360 {lab=b[1]}
 N 830 -250 890 -250 {lab=b[1]}
 N 830 -270 890 -270 {lab=b[2]}
-N 830 -350 890 -350 {lab=b[2]}
-N 830 -330 890 -330 {lab=b[2]}
-N 830 -310 890 -310 {lab=b[2]}
-N 830 -290 890 -290 {lab=b[2]}
-C {title_nologo.sym} 190 0 0 0 {name=l1 author="ejfogleman"}
+N 830 -350 890 -350 {lab=p}
+N 830 -330 890 -330 {lab=p_b}
+N 830 -310 890 -310 {lab=n}
+N 830 -290 890 -290 {lab=n_b}
+C {title_ejf.sym} 190 0 0 0 {name=l1 author="ejfogleman"}
 C {vsource.sym} 0 -330 0 0 {name=V_VDD value="\{VDD\} AC=1" savecurrent=true}
 C {gnd.sym} 0 -300 0 0 {name=l10 lab=GND}
 C {lab_wire.sym} 0 -380 0 1 {name=p13 sig_type=std_logic lab=vdd}
-C {devices/code_shown.sym} 0 100 0 0 {name=s1 only_toplevel=false value="* ejf_pfd test
+C {devices/code_shown.sym} 0 120 0 0 {name=s1 only_toplevel=false value="* ejf_pfd test
 .lib ~/.volare/sky130A/libs.tech/combined/sky130.lib.spice tt
 .include ~/.volare/sky130A/libs.ref/sky130_fd_sc_ls/spice/sky130_fd_sc_ls.spice
 .option temp=27
@@ -62,7 +62,7 @@ C {devices/code_shown.sym} 0 100 0 0 {name=s1 only_toplevel=false value="* ejf_p
 .param VEN_REPL=1.8
 .param VEN=1.8
 "}
-C {devices/code_shown.sym} 840 100 0 0 {name=s2 only_toplevel=false value="* 
+C {devices/code_shown.sym} 840 120 0 0 {name=s2 only_toplevel=false value="* 
 * default reltol=1e-3 vntol=1e-6 abstol=1e-12
 .options  reltol=1e-4 vntol=1e-7 abstol=1e-13
 .option sparse
@@ -123,3 +123,5 @@ C {gnd.sym} 200 -300 0 0 {name=l14 lab=GND}
 C {lab_wire.sym} 200 -380 0 1 {name=p16 sig_type=std_logic lab=b[1]}
 C {lab_wire.sym} 830 -250 0 0 {name=p21 sig_type=std_logic lab=b[1]}
 C {lab_wire.sym} 830 -270 0 0 {name=p22 sig_type=std_logic lab=b[2]}
+C {copyright.sym} 0 40 0 0 {name=s3 place=header value="* Copyright (c) Eric Fogleman 2025 
+* SPDX-License-Identifier: Apache-2.0"}

@@ -7,7 +7,7 @@ S {}
 E {}
 T {Notes:
 Sources a and b are set up to go from phase lead to lag in 2 us.
-Use gear instead of trap (default) to get nice-looking current waveforms.} 750 340 0 0 0.4 0.4 {}
+Use gear instead of trap (default) to get nice-looking current waveforms.} 750 360 0 0 0.4 0.4 {}
 N 180 -350 380 -350 {lab=a}
 N 680 -290 680 -260 {lab=GND}
 N 1100 -210 1100 -180 {lab=GND}
@@ -61,13 +61,13 @@ lab=b1}
 N 950 -180 950 -150 {
 lab=ibnp_1u}
 N 200 -580 200 -560 {lab=b0}
-C {title_nologo.sym} 190 0 0 0 {name=l1 author="ejfogleman"}
+C {title_ejf.sym} 190 0 0 0 {name=l1 author="ejfogleman"}
 C {vsource.sym} -100 -530 0 0 {name=V_VDD value=\{VDD\} savecurrent=true}
 C {gnd.sym} -100 -500 0 0 {name=l10 lab=GND}
 C {lab_wire.sym} -100 -580 0 1 {name=p13 sig_type=std_logic lab=vdd}
 C {vsource.sym} 180 -250 0 0 {name=V1 value="0 PULSE(0 \{VDD\} \{TDA\} \{TRF\} \{TRF\} \{TA/2\} \{TA\})"}
 C {gnd.sym} 180 -220 0 0 {name=l3 lab=GND}
-C {devices/code_shown.sym} 10 90 0 0 {name=s1 only_toplevel=false value="* ejf_pfd test
+C {devices/code_shown.sym} 10 110 0 0 {name=s1 only_toplevel=false value="* ejf_pfd test
 .lib ~/.volare/sky130A/libs.tech/combined/sky130.lib.spice tt
 .include ~/.volare/sky130A/libs.ref/sky130_fd_sc_ls/spice/sky130_fd_sc_ls.spice
 .option temp=27
@@ -86,7 +86,7 @@ C {devices/code_shown.sym} 10 90 0 0 {name=s1 only_toplevel=false value="* ejf_p
 .param VEN_REPL=1.8
 .param VEN=1.8
 "}
-C {devices/code_shown.sym} 840 100 0 0 {name=s2 only_toplevel=false value="* Run transient
+C {devices/code_shown.sym} 840 120 0 0 {name=s2 only_toplevel=false value="* Run transient
 * default reltol=1e-3 vntol=1e-6 abstol=1e-12
 .options  reltol=1e-4 vntol=1e-7 abstol=1e-13
 .options  method=gear
@@ -140,3 +140,5 @@ C {lab_wire.sym} 770 -270 0 1 {name=p12 sig_type=std_logic lab=b1}
 C {vsource.sym} 200 -530 0 0 {name=V3 value=\{VB0\} savecurrent=true}
 C {gnd.sym} 200 -500 0 0 {name=l8 lab=GND}
 C {lab_wire.sym} 200 -580 0 1 {name=p14 sig_type=std_logic lab=b0}
+C {copyright.sym} 0 40 0 0 {name=s3 place=header value="* Copyright (c) Eric Fogleman 2025 
+* SPDX-License-Identifier: Apache-2.0"}
