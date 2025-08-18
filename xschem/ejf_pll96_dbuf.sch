@@ -58,7 +58,7 @@ lab=y_b}
 C {title_ejf.sym} 200 -40 0 0 {name=l1 author="ejfogleman"}
 C {ipin.sym} 200 -270 0 0 {name=p26 lab=a}
 C {sky130_fd_pr/pfet3_01v8_hvt.sym} 270 -310 0 0 {name=MP1
-W=2
+W=1.2
 L=0.15
 body=vdd
 nf=1
@@ -73,7 +73,7 @@ model=pfet_01v8_hvt
 spiceprefix=X
 }
 C {sky130_fd_pr/pfet3_01v8_hvt.sym} 490 -310 0 0 {name=MP3
-W=2
+W=1.2
 L=0.15
 body=vdd
 nf=1
@@ -88,7 +88,7 @@ model=pfet_01v8_hvt
 spiceprefix=X
 }
 C {sky130_fd_pr/nfet3_01v8.sym} 490 -230 0 0 {name=MN4
-W=1
+W=0.74
 L=0.15
 body=gnd
 nf=1
@@ -103,7 +103,7 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {sky130_fd_pr/nfet3_01v8.sym} 270 -230 0 0 {name=MN2
-W=1
+W=0.74
 L=0.15
 body=gnd
 nf=1

@@ -69,8 +69,7 @@ N 750 -310 780 -310 {lab=outp}
 N 780 -330 780 -310 {lab=outp}
 N 80 -410 180 -410 {lab=vhi}
 N 80 -160 180 -160 {lab=gnd}
-N 780 -160 840 -160 {lab=gnd}
-C {sky130_fd_pr/nfet_01v8.sym} 350 -220 0 0 {name=M11
+C {sky130_fd_pr/nfet_01v8.sym} 350 -220 0 0 {name=MN2P
 W=1.22
 L=0.44
 nf=1
@@ -84,7 +83,7 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {sky130_fd_pr/nfet_01v8.sym} 160 -220 0 0 {name=M13
+C {sky130_fd_pr/nfet_01v8.sym} 160 -220 0 0 {name=MN1P
 W=4.88
 L=0.44
 nf=4
@@ -98,7 +97,7 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {sky130_fd_pr/pfet_01v8_hvt.sym} 160 -360 0 0 {name=M14
+C {sky130_fd_pr/pfet_01v8_hvt.sym} 160 -360 0 0 {name=MP1P
 W=19.44	
 L=0.44
 nf=6
@@ -112,7 +111,7 @@ sa=0 sb=0 sd=0
 model=pfet_01v8_hvt
 spiceprefix=X
 }
-C {sky130_fd_pr/nfet_01v8.sym} 610 -220 0 1 {name=M27
+C {sky130_fd_pr/nfet_01v8.sym} 610 -220 0 1 {name=MN2N
 W=1.22
 L=0.44
 nf=1
@@ -126,7 +125,7 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {sky130_fd_pr/nfet_01v8.sym} 800 -220 0 1 {name=M31
+C {sky130_fd_pr/nfet_01v8.sym} 800 -220 0 1 {name=MN1N
 W=4.88
 L=0.44
 nf=4
@@ -140,7 +139,7 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {sky130_fd_pr/pfet_01v8_hvt.sym} 800 -360 0 1 {name=M30
+C {sky130_fd_pr/pfet_01v8_hvt.sym} 800 -360 0 1 {name=MP1N
 W=19.44
 L=0.44	
 nf=6
@@ -161,16 +160,6 @@ C {opin.sym} 750 -310 0 1 {name=p10 lab=outp
 }
 C {iopin.sym} 80 -410 0 1 {name=p11 lab=vhi}
 C {iopin.sym} 80 -160 0 1 {name=p12 lab=gnd}
-C {capa.sym} 120 -190 0 0 {name=C3
-m=1
-value=\{CP\}
-footprint=1206
-device="ceramic capacitor"}
-C {capa.sym} 840 -190 0 0 {name=C4
-m=1
-value=\{CP\}
-footprint=1206
-device="ceramic capacitor"}
 C {title_ejf.sym} 200 -40 0 0 {name=l1 author="ejfogleman"}
 C {copyright.sym} 0 10 0 0 {name=s1 place=header value="* Copyright (c) Eric Fogleman 2025 
 * SPDX-License-Identifier: Apache-2.0"}

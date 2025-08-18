@@ -1,5 +1,4 @@
-v {xschem version=3.4.5 file_version=1.2
-}
+v {xschem version=3.4.8RC file_version=1.2}
 G {}
 K {}
 V {}
@@ -10,7 +9,7 @@ T {8 fF/um^2
 C1, C2 Cap scaling
 csc:
 1 ==> 3.6 pF, 36 pF
-0 ==> 1.8 pF, 18 pF } -60 -760 0 0 0.4 0.4 {}
+0 ==> 1.8 pF, 18 pF } -59.77696300896434 -760 0 0 0.4 0.4 {}
 T {Resistor scaling
 rsc[1],rsc[0]:
 00 ==> R = 69.06 kOhm
@@ -215,26 +214,11 @@ lab=rsc[0]}
 C {title_ejf.sym} 200 -40 0 0 {name=l1 author="ejfogleman"}
 C {iopin.sym} 90 -160 0 1 {name=p1 lab=vc}
 C {iopin.sym} 90 -820 0 1 {name=p2 lab=vdd}
-C {sky130_fd_pr/pfet3_01v8_lvt.sym} 390 -700 3 0 {name=MPC2[9:0]
-W=24
+C {sky130_fd_pr/pfet3_01v8_lvt.sym} 790 -700 3 0 {name=MPC2[3:0]
+W=6
 L=11
 body=vdd
-nf=4
-mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
-model=pfet_01v8_lvt
-spiceprefix=X
-}
-C {sky130_fd_pr/pfet3_01v8_lvt.sym} 790 -700 3 0 {name=MPC1[0]
-W=24
-L=11
-body=vdd
-nf=4
+nf=1
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
@@ -246,11 +230,11 @@ model=pfet_01v8_lvt
 spiceprefix=X
 }
 C {lab_wire.sym} 390 -480 0 1 {name=p3 sig_type=std_logic lab=mpc2g}
-C {sky130_fd_pr/pfet3_01v8_lvt.sym} 570 -700 3 0 {name=MPC2[19:10]
-W=24
+C {sky130_fd_pr/pfet3_01v8_lvt.sym} 570 -700 3 0 {name=MPC2[79:40]
+W=6
 L=11
 body=vdd
-nf=4
+nf=1
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
@@ -263,16 +247,16 @@ spiceprefix=X
 }
 C {iopin.sym} 90 -120 0 1 {name=p7 lab=gnd}
 C {ipin.sym} 90 -910 0 0 {name=p5 lab=csc}
-C {sky130_fd_pr/res_high_po_0p35.sym} 140 -310 0 1 {name=R7[1:0]
+C {sky130_fd_pr/res_high_po_0p35.sym} 140 -310 0 1 {name=R7[5:0]
 L=9.9
 model=res_high_po_0p35
 spiceprefix=X
 mult=1}
-C {sky130_fd_pr/pfet3_01v8_lvt.sym} 970 -700 3 0 {name=MPC1[1]
-W=24
+C {sky130_fd_pr/pfet3_01v8_lvt.sym} 970 -700 3 0 {name=MPC1[4:7]
+W=6
 L=11
 body=vdd
-nf=4
+nf=1
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
@@ -394,3 +378,18 @@ C {bus_connect_nolab.sym} 570 -980 0 1 {name=r7}
 C {bus_connect_nolab.sym} 570 -960 0 1 {name=r8}
 C {copyright.sym} 0 10 0 0 {name=s1 place=header value="* Copyright (c) Eric Fogleman 2025 
 * SPDX-License-Identifier: Apache-2.0"}
+C {sky130_fd_pr/pfet3_01v8_lvt.sym} 390 -700 3 0 {name=MPC3[39:0]
+W=6
+L=11
+body=vdd
+nf=1
+mult=1
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=pfet_01v8_lvt
+spiceprefix=X
+}

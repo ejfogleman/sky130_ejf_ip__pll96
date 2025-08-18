@@ -242,12 +242,6 @@ N 740 -370 750 -370 {
 lab=chp_en}
 N 740 -370 740 -220 {
 lab=chp_en}
-N 720 -390 750 -390 {
-lab=chp_repl}
-N 720 -390 720 -240 {
-lab=chp_repl}
-N 180 -240 720 -240 {
-lab=chp_repl}
 C {title_ejf.sym} 200 -40 0 0 {name=l1 author="ejfogleman"}
 C {ejf_pll96_lpf.sym} 1250 -630 0 0 {name=xlpf}
 C {ejf_pll96_pfd.sym} 480 -500 0 0 {name=xpfd}
@@ -294,7 +288,6 @@ C {ipin.sym} -90 -480 0 0 {name=p37 lab=divr_en}
 C {ipin.sym} 180 -200 0 0 {name=p39 lab=lpf_csc}
 C {ipin.sym} 180 -280 0 0 {name=p40 lab=chp_b[1]}
 C {ipin.sym} 180 -220 0 0 {name=p30 lab=chp_en}
-C {ipin.sym} 180 -240 0 0 {name=p31 lab=chp_repl}
 C {ipin.sym} 1290 -250 0 0 {name=p43 lab=vco_tst[0]}
 C {ejf_pll96_div_mm.sym} 2000 -300 0 0 {name=xdivf}
 C {ipin.sym} 180 -160 0 0 {name=p41 lab=lpf_rsc[0]}

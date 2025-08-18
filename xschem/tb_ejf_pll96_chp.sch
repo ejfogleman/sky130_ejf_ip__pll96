@@ -26,7 +26,6 @@ N 1190 -320 1300 -320 {
 lab=cp}
 N 1360 -320 1400 -320 {
 lab=#net1}
-N 830 -210 890 -210 {lab=repl}
 N 830 -230 890 -230 {lab=b[0]}
 N 830 -190 890 -190 {lab=en}
 N 1040 -160 1040 -130 {
@@ -56,9 +55,9 @@ C {devices/code_shown.sym} 0 120 0 0 {name=s1 only_toplevel=false value="* ejf_p
 .param CP=10f
 .param VC=0.85
 .param IB=1u
-.param VB2=0
-.param VB1=1.8
-.param VB0=0
+.param VB2=1.8
+.param VB1=0
+.param VB0=1.8
 .param VEN_REPL=1.8
 .param VEN=1.8
 "}
@@ -69,9 +68,7 @@ C {devices/code_shown.sym} 840 120 0 0 {name=s2 only_toplevel=false value="*
 *.option klu
 .control
    save all
-   + @m.xchp.xmn2.msky130_fd_pr__nfet_01v8[id]
-   op
-*  noise v(cp) V_VDD dec 10 1 1G
+   noise v(cp) V_VDD dec 10 1 1G
    write tb_ejf_pll96_chp.raw
 .endc
 .end"}
@@ -102,7 +99,6 @@ C {lab_wire.sym} 400 -240 0 1 {name=p14 sig_type=std_logic lab=n_b}
 C {res.sym} 1330 -320 1 0 {name=R1
 value="1 noise=0"
 m=1}
-C {lab_wire.sym} 830 -210 0 0 {name=p7 sig_type=std_logic lab=repl}
 C {lab_wire.sym} 830 -230 0 0 {name=p15 sig_type=std_logic lab=b[0]}
 C {lab_wire.sym} 830 -190 0 0 {name=p17 sig_type=std_logic lab=en}
 C {gnd.sym} 1040 -80 0 0 {name=l8 lab=GND}
