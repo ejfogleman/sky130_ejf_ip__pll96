@@ -1,5 +1,4 @@
-v {xschem version=3.4.5 file_version=1.2
-}
+v {xschem version=3.4.7 file_version=1.2}
 G {}
 K {}
 V {}
@@ -289,7 +288,7 @@ C {ipin.sym} 180 -200 0 0 {name=p39 lab=lpf_csc}
 C {ipin.sym} 180 -280 0 0 {name=p40 lab=chp_b[1]}
 C {ipin.sym} 180 -220 0 0 {name=p30 lab=chp_en}
 C {ipin.sym} 1290 -250 0 0 {name=p43 lab=vco_tst[0]}
-C {ejf_pll96_div_mm.sym} 2000 -300 0 0 {name=xdivf}
+C {ejf_pll96_sdiv_mm.sym} 2000 -300 0 0 {name=xdivf}
 C {ipin.sym} 180 -160 0 0 {name=p41 lab=lpf_rsc[0]}
 C {ipin.sym} 1290 -270 0 0 {name=p36 lab=vco_tst[1]}
 C {ipin.sym} 1290 -290 0 0 {name=p38 lab=vco_tst[2]}

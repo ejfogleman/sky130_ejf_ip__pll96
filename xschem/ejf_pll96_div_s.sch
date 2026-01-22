@@ -1,5 +1,4 @@
-v {xschem version=3.4.5 file_version=1.2
-}
+v {xschem version=3.4.7 file_version=1.2}
 G {}
 K {}
 V {}
@@ -10,6 +9,9 @@ input when
 disabled} 1430 -440 0 0 0.4 0.4 {}
 T {q_b = 0 when 
 disabled} 1420 -90 0 0 0.4 0.4 {}
+T {Should be AND rather than XNOR gates
+XNOR will match S or S'
+(Works because only because S <= 0b1000)} 140 -290 0 0 0.4 0.4 {}
 N 40 -630 80 -630 {
 lab=q0_b}
 N 40 -690 40 -630 {

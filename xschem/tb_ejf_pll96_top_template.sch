@@ -1,4 +1,4 @@
-v {xschem version=3.4.8RC file_version=1.2}
+v {xschem version=3.4.7 file_version=1.2}
 G {}
 K {}
 V {}
@@ -154,8 +154,8 @@ C {lab_wire.sym} 980 -880 0 1 {name=p13 sig_type=std_logic lab=vdd_ref}
 C {vsource.sym} 10 -770 0 0 {name=V1 value="0 PULSE(0 \{VDD\} \{TD_REF\} \{T_RF\} \{T_RF\} \{T_REF/2\} \{T_REF\})"}
 C {gnd.sym} 10 -740 0 0 {name=l3 lab=GND}
 C {devices/code_shown.sym} 10 120 0 0 {name=s1 only_toplevel=false value="* ejf_pfd test
-.lib ~/.volare/sky130A/libs.tech/combined/sky130.lib.spice tt
-.include ~/.volare/sky130A/libs.ref/sky130_fd_sc_ls/spice/sky130_fd_sc_ls.spice
+.lib ~/.ciel/sky130A/libs.tech/combined/sky130.lib.spice tt
+.include ~/.ciel/sky130A/libs.ref/sky130_fd_sc_ls/spice/sky130_fd_sc_ls.spice
 *** temp, supply, and variables to be included seperately
 "}
 C {devices/code_shown.sym} 860 120 0 0 {name=s2 only_toplevel=false value="* Run transient

@@ -1,4 +1,4 @@
-v {xschem version=3.4.5 file_version=1.2
+v {xschem version=3.4.7 file_version=1.2
 *
 * This file is part of XSCHEM,
 * a schematic capture and Spice/Vhdl/Verilog netlisting tool for circuit
@@ -21,11 +21,12 @@ v {xschem version=3.4.5 file_version=1.2
 }
 G {}
 K {type=netlist_commands
-template="name=s1 place=header value=\\"* Copyright (c) Eric Fogleman 2025 
+template="name=s1 place=header value=\\"* Copyright (c) Eric Fogleman 2026 
 * SPDX-License-Identifier: Apache-2.0\\""
 format="
 @value
-"}
+"
+}
 V {}
 S {}
 E {}
