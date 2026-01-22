@@ -29,6 +29,7 @@ T {Overall divisor = N*P + S, where:
 N = 2
 P = \{2, 3, 4, 6, 8, 12, 16, 24\} (static)
 S = \{1, 2, ... P-1\} (may update when q == 1)} 630 -180 0 0 0.3 0.3 {}
+T {Retime q to vco clk} 1060 -450 0 0 0.3 0.3 {}
 N 450 -570 480 -570 {lab=vdd}
 N 450 -530 480 -530 {lab=gnd}
 N 940 -550 970 -550 {lab=vdd}
