@@ -1,4 +1,4 @@
-v {xschem version=3.4.7 file_version=1.2}
+v {xschem version=3.4.8RC file_version=1.2}
 G {}
 K {}
 V {}
@@ -167,7 +167,7 @@ C {devices/code_shown.sym} 10 120 0 0 {name=s1 only_toplevel=false value="* ejf_
 .param T_RF=300p
 .param T_RAMP=50n
 .param CP=10f
-.param CLOAD=100f
+.param CLOAD=10f
 .param IB=1u
 .param VDIVR_EN=1.8
 .param VCHP_EN=1.8

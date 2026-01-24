@@ -1,4 +1,4 @@
-v {xschem version=3.4.7 file_version=1.2}
+v {xschem version=3.4.8RC file_version=1.2}
 G {}
 K {}
 V {}
@@ -115,7 +115,7 @@ C {devices/code_shown.sym} 10 120 0 0 {name=s1 only_toplevel=false value="* ejf_
 .param T_RF=300p
 .param T_RAMP=50n
 .param CP=10f
-.param CLOAD=100f
+.param CLOAD=10f
 .param IB=1u
 .param VDIVR_EN=1.8
 .param VCHP_EN=1.8
@@ -134,6 +134,9 @@ C {devices/code_shown.sym} 860 100 0 0 {name=s2 only_toplevel=false value="* Run
    save i(v_vdd_ref) i(v_vdd_div) 
    save clk clk_out clk_divr clk_divf 
    save xdivmm.clk_div23 xdivmm.mc
+   save xdivmm.xp.q3 xdivmm.xp.q2 xdivmm.xp.q1 xdivmm.xp.q0 xdivmm.xp.q3_or_dis xdivmm.xp.q2_or_dis xdivmm.xp.q1_or_dis xdivmm.xp.q0_or_dis
+   save xdivmm.q
+   save xdivmm.xn.q1 xdivmm.xn.d2
    tran 1n 2u
    write tb_ejf_pll96_sdiv_mm_reg.raw
    meas tran idd_ref avg i(v_vdd_ref) from=800n to=2u

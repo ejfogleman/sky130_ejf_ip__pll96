@@ -1,4 +1,4 @@
-v {xschem version=3.4.7 file_version=1.2}
+v {xschem version=3.4.8RC file_version=1.2}
 G {}
 K {}
 V {}
@@ -119,8 +119,6 @@ N 640 -370 640 -340 {
 lab=ibnp_1u}
 N 450 -860 490 -860 {
 lab=chp_en}
-N 1780 -240 1780 -190 {
-lab=repl}
 N 450 -700 490 -700 {
 lab=tst2}
 N 450 -680 490 -680 {
@@ -160,45 +158,20 @@ C {devices/code_shown.sym} 10 120 0 0 {name=s1 only_toplevel=false value="* ejf_
 .include ~/.ciel/sky130A/libs.ref/sky130_fd_sc_ls/spice/sky130_fd_sc_ls.spice
 .option temp=27
 .param VDD=1.8
-.param T_REF=200n
 .param TD_REF=50n
 .param T_RF=300p
 .param T_RAMP=50n
 .param CP=10f
-.param CLOAD=100f
+.param CLOAD=10f
 .param IB=1u
 .param VDIVR_EN=1.8
 .param VCHP_EN=1.8
-* input R divider
-.param VR0=0
-.param VR1=0
-* feedback F divider
-.param VS3=0
-.param VS2=1.8
-.param VS1=0
-.param VS0=0
-.param VP3=0
-.param VP2=1.8
-.param VP1=1.8
-.param VP0=1.8
-.param VEN3=0
-.param VEN2=1.8
-.param VEN1=1.8
-.param VEN0=1.8
-.param VENS=1.8
-* charge pump bias
-.param VCPB2=1.8
-.param VCPB1=0
-.param VCPB0=1.8
-.param VREPL=1.8
-* loop filter scale
-.param VCSC=1.8
-.param VRSC1=0
-.param VRSC0=0
 * vco test
 .param VTST0=0
 .param VTST1=0
 .param VTST2=0
+* mode-dependent parameters
+.include config_4.inc
 "}
 C {devices/code_shown.sym} 850 120 0 0 {name=s2 only_toplevel=false value="* Run transient
 * default reltol=1e-3 vntol=1e-6 abstol=1e-12
@@ -341,10 +314,6 @@ C {parax_cap.sym} 810 -630 0 0 {name=C1 gnd=0 value=\{CLOAD\} m=1}
 C {parax_cap.sym} 890 -630 0 0 {name=C2 gnd=0 value=\{CLOAD\} m=1}
 C {gnd.sym} 640 -290 0 0 {name=l4 lab=GND}
 C {lab_wire.sym} 450 -860 0 0 {name=p36 sig_type=std_logic lab=chp_en}
-C {vsource.sym} 1780 -160 0 0 {name=V40 value=\{VREPL\} savecurrent=false}
-C {gnd.sym} 1780 -130 0 0 {name=V41 lab=GND
-value=\{VS3\}}
-C {lab_wire.sym} 1780 -240 0 1 {name=p38 sig_type=std_logic lab=repl}
 C {lab_wire.sym} 450 -700 0 0 {name=p52 sig_type=std_logic lab=tst2
 }
 C {lab_wire.sym} 450 -680 0 0 {name=p53 sig_type=std_logic lab=tst1

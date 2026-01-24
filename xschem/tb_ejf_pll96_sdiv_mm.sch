@@ -1,4 +1,4 @@
-v {xschem version=3.4.7 file_version=1.2}
+v {xschem version=3.4.8RC file_version=1.2}
 G {}
 K {}
 V {}
@@ -104,31 +104,13 @@ C {devices/code_shown.sym} 10 120 0 0 {name=s1 only_toplevel=false value="* ejf_
 .include ~/.ciel/sky130A/libs.ref/sky130_fd_sc_ls/spice/sky130_fd_sc_ls.spice
 .option temp=27
 .param VDD=1.8
-.param T_REF=200n
 .param TD_REF=50n
 .param T_RF=300p
-.param T_VCO=10n
 .param TD_VCO=2.5n
 .param CP=10f
 .param CLOAD=10f
 .param VDIVR_EN=1.8
-* input R divider
-.param VR0=0
-.param VR1=0
-* feedback F divider
-.param VS3=0
-.param VS2=1.8
-.param VS1=0
-.param VS0=0
-.param VP3=0
-.param VP2=1.8
-.param VP1=1.8
-.param VP0=1.8
-.param VEN3=0
-.param VEN2=1.8
-.param VEN1=1.8
-.param VEN0=1.8
-.param VENS=1.8
+.include config_6.inc
 "}
 C {devices/code_shown.sym} 860 110 0 0 {name=s2 only_toplevel=false value="* Run transient
 * default reltol=1e-3 vntol=1e-6 abstol=1e-12
@@ -138,6 +120,9 @@ C {devices/code_shown.sym} 860 110 0 0 {name=s2 only_toplevel=false value="* Run
    save i(v_vdd_ref) i(v_vdd_div) 
    save clk clk_out clk_divr clk_divf 
    save xdivmm.clk_div23 xdivmm.mc
+   save xdivmm.xp.q3 xdivmm.xp.q2 xdivmm.xp.q1 xdivmm.xp.q0 xdivmm.xp.q3_or_dis xdivmm.xp.q2_or_dis xdivmm.xp.q1_or_dis xdivmm.xp.q0_or_dis
+   save xdivmm.q
+   save xdivmm.xn.q1 xdivmm.xn.d2
    tran 1n 2u
    write tb_ejf_pll96_sdiv_mm.raw
    meas tran idd_ref avg i(v_vdd_ref) from=800n to=2u
