@@ -1,4 +1,4 @@
-# sky130_ejf_ip__pll96
+# sky130_ejf_ip__pll_dev
 
 Skywater sky130 96 MHz clock multiplier PLL IP to generate a 96 MHz clock from reference clocks ranging from 4 MHz to 16 MHz.
 
